@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P4F6KP2');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/version1.css' %}" media="screen and (min-width:1398px)"/>
+    <link rel="stylesheet" href="{% static 'css/version2.css' %}" media="screen and (min-width:1024px) and (max-width:1397px)"/>
+    <link rel="stylesheet" href="{% static 'css/version3.css' %}" media="screen and (min-width:768px) and (max-width:1023px)"/>
+    <link rel="stylesheet" href="{% static 'css/version4.css' %}" media="screen and (min-width:601px) and (max-width:767px)"/>
+    <link rel="stylesheet" href="{% static 'css/version5.css' %}" media="screen and (min-width:425px) and (max-width:600px)"/>
+    <link rel="stylesheet" href="{% static 'css/version6.css' %}" media="screen and (min-width:375px) and (max-width:424px)"/>
+    <link rel="stylesheet" href="{% static 'css/version7.css' %}" media="screen and (max-width:374px)"/>
+    <link rel="stylesheet" href="{% static 'css/animation.css' %}"/>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206167534-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-206167534-1');
+    </script>
+    <title>NODOUBT</title>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4F6KP2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--navbar-->
+    {% include 'shared/navbar.html' %}
+    <!--content-->
+    {% block content %}
+
+    {% endblock %}
+    <!--footer-->
+    {% include 'shared/footer.html' %}
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/clock.js' %}"></script>
+    <script src="{% static 'js/todo.js' %}"></script>
+    <script src="{% static 'js/request.js' %}"></script>
+    <script src="{% static 'js/dropdown.js' %}"></script>
+    <script src="{% static 'js/detail.js' %}"></script>
+    <script src="{% static 'js/popular.js' %}"></script>
+</body>
+</html>
