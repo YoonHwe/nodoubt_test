@@ -24,19 +24,6 @@ a{
     font-family: 'Monoton', sans-serif;
     width: 170px;
 }
-.menu_content{
-    display: flex;
-    margin-left: 10%;
-    font-size: 20px;
-}
-.menu_content_page{
-    font-family: 'Roboto', sans-serif;
-    margin: 0 15px;
-}
-.menu_content_page a:hover{
-    color: orange;
-    cursor: pointer;
-}
 .menu_right{
     width: 170px;
     display: flex;
@@ -66,7 +53,6 @@ a{
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .dropdown-content a {
     color: black;
     text-decoration: none;
@@ -74,7 +60,6 @@ a{
     padding: 4px 8px;
     border-radius: 10px;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
@@ -107,18 +92,27 @@ a{
 }
 .content_first_left_lower_label{
     font-size: 20px;
-    color: gray;
 }
 .content_first_left_lower_option{
     margin-top: -18px;
 }
+.content_first_left_lower_option li{
+    opacity: .5;
+}
+.content_first_left_lower_option li:hover{
+    opacity: 1;
+}
 .content_first_left_lower_option a{
     font-size: 20px;
     color: black;
+    opacity: .5;
 }
 .content_first_left_lower_option a:hover{
-    color: orange;
+    opacity: 1;
     cursor: pointer;
+    color: orange;
+    font-weight: bold;
+
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 20px;
@@ -128,14 +122,11 @@ a{
 }
 /* 두번째 칸 - 인스트럭션 + 지원서 */
 .content_second{ 
-    padding: 2% 12% 0% 12%; 
+    padding: 4% 12% 2% 12%; 
     animation: goOpacityUp 2s ease-in-out;
-}
-.content_second_upper{
     display: flex; 
 }
 .content_second_upper_right{
-    margin: 0% 2%; 
     width: 50%; 
     display: flex; 
     flex-direction: column; 
@@ -146,7 +137,6 @@ a{
     margin-top: -24px;
 }
 .content_second_upper_left{
-    margin: 0% 2%; 
     width: 50%; 
     display: flex; 
     justify-content: center; 
@@ -191,11 +181,17 @@ a{
     justify-content: center;
     align-items: center;
 }
-#modal_btn:hover{
-    opacity: .3;
+#modal_btn{
     text-decoration: underline;
     text-underline-position: under;
+}
+#modal_btn:hover{
+    opacity: .3;
     cursor: pointer;
+    text-decoration: none;
+}
+#modal_btn:hover + #content_second_upper_right_arrow{
+    animation: goRightandLeft .5s ease-in-out infinite;
 }
 .modal_wrap{
     display: none; 
@@ -372,11 +368,6 @@ a{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.content_popular_subtitle1{
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-}
 .content_popular_subtitle2{
     font-size: 16px;
     text-align: center;
@@ -393,15 +384,15 @@ a{
 .content_popular_top_contents{
     display: inline-block;
     position: relative;
-    border: 1px solid black; 
     width: 200px;
     height: 160px;
-    padding: 0px 8px;
+    padding: 0px 12px;
     margin: 20px 20px;
-    border-radius: 10px;
     border: 1px solid gray;
+    border-radius: 15px;
     vertical-align: middle;
     text-align: left;
+    background-color: white;
 }
 #content_popular_top_contents_company{
     font-size: 24px;
@@ -742,4 +733,42 @@ iframe{
 }
 .mypage_first_body_td{
     /* border-bottom: 2px solid orange; */
+}
+
+/**/
+.slide_wrapper{
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	height: 180px;
+	overflow: hidden;
+}
+.slides{
+	position: absolute;
+	left:0; 
+    top:0;	
+    border: 3px solid blue;
+}
+.slides.animated{
+	transition: 0.5s ease-out;
+}
+.slides{
+	float: left;
+}
+.slides a:not(:last-child){	
+	margin-right: 30px;
+}
+.controls{
+	text-align: center;
+	margin-top: 180px;
+}
+.controls span{
+	background:#333;
+	color: #fff;
+	padding: 10px 20px;
+	margin: 0 10px;
+    border: 1px solid teal;
+}
+.controls span:hover{
+    cursor: pointer;
 }

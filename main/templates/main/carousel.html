@@ -1,0 +1,26 @@
+<div class="content_popular_top slide_wrapper" >
+	<div class="slides">
+		{% for data in datas %}
+		<a href="{% url 'main:detail' data.id %}">
+			<div class="content_popular_top_contents">
+				<!-- <p id="content_popular_top_contents_company">{{data.company}}</p>                
+				<p id="content_popular_top_contents_job">{{data.job}}</p>
+				<p id="content_popular_top_contents_year">{{data.employed_year}}</p>
+				<a href ="{%url 'main:detail' data.id %}">...열어보기</a> -->
+				{% if data.image %}
+					<img src="{{data.image.url}}" width="100%" height="100%">
+				{% else %}
+					<p id="content_popular_top_contents_company">{{data.company}}</p>                
+					<p id="content_popular_top_contents_job">{{data.job}}</p>
+					<p id="content_popular_top_contents_year">{{data.employed_year}}</p>
+				{% endif %}
+			</div>
+		</a>
+		{%endfor%}
+	</div>
+	
+	<p class="controls">
+		<span class="prev">prev</span>
+		<span class="next">next</span>
+	</p>
+</div>
