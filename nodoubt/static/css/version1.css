@@ -429,12 +429,10 @@ a{
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 2%;
-    text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .content_issue_category{
     display: flex;
-    justify-content: center;
     margin-top: 40px;
 }
 .content_issue_category_list{
@@ -750,7 +748,7 @@ iframe{
     border: 3px solid blue;
 }
 .slides.animated{
-	transition: 0.5s ease-out;
+	transition: 0.5s ease-in-out;
 }
 .slides{
 	float: left;
@@ -761,13 +759,13 @@ iframe{
 .controls{
 	text-align: center;
 	margin-top: 180px;
+    margin-left: 600px;
 }
 .controls span{
 	background:#333;
 	color: #fff;
 	padding: 10px 20px;
 	margin: 0 10px;
-    border: 1px solid teal;
 }
 .controls span:hover{
     cursor: pointer;
