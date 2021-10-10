@@ -373,31 +373,36 @@ a{
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     border-bottom: 1px solid black;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     width: 50%;
     margin: 0 auto;
 }
 .content_popular_top{
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 0px;
 }
 .content_popular_top_contents{
     display: inline-block;
     position: relative;
     width: 200px;
-    height: 160px;
+    height: 180px;
     padding: 0px 12px;
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
     border: 1px solid gray;
     border-radius: 15px;
     vertical-align: middle;
     text-align: left;
     background-color: white;
 }
+.content_popular_top_contents img{
+    width: 60%;
+    height: 50px;
+    margin: 16px 0px 6px 0px;
+}
 #content_popular_top_contents_company{
     font-size: 24px;
     font-weight: 600;
-    margin: 26px 0px 6px 0px;
+    margin: 6px 0px 6px 0px;
 }
 #content_popular_top_contents_job{
     font-size: 20px;
@@ -416,7 +421,7 @@ a{
     padding: 8px;
 }
 .content_popular_top_contents:hover{
-    background-color: orange;
+    border: 3px solid orange;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /**/
@@ -527,17 +532,23 @@ iframe{
     margin: 0% 4%;
     padding: 2% 10%; 
     display:flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     border-top: 3px solid black;
 }
 .footer_company{
-    width: 30%;
+    width: 50%;
     font-size: 36px; 
     font-family: 'Monoton', sans-serif; 
     text-align:center;
 }
-.footer_letter{
+#footer_title{
+    font-size: 32px;
+}
+#footer_content{
+    font-size: 16px;
+}
+/* .footer_letter{
     width: 30%; 
     text-align: center;
 }
@@ -548,9 +559,9 @@ iframe{
 }
 .footer_letter button:hover{
     background-color: orange;
-}
+} */
 .footer_feedback{
-    width: 30%; 
+    width: 50%; 
     text-align: center; 
     font-size: 16px;
 }
@@ -736,16 +747,16 @@ iframe{
 /**/
 .slide_wrapper{
 	position: relative;
-	width: 1000px;
 	margin: 0 auto;
+    /* width: 4000px; */
 	height: 180px;
 	overflow: hidden;
 }
 .slides{
 	position: absolute;
-	left:0; 
-    top:0;	
-    border: 3px solid blue;
+	left:0;
+    top: 20px;	
+    /* border: 8px solid blue; */
 }
 .slides.animated{
 	transition: 0.5s ease-in-out;
@@ -753,13 +764,14 @@ iframe{
 .slides{
 	float: left;
 }
-.slides a:not(:last-child){	
+.content_popular_top_contents:not(:last-child){	
 	margin-right: 30px;
 }
 .controls{
 	text-align: center;
-	margin-top: 180px;
-    margin-left: 600px;
+	/* margin-top: 180px; */
+    /* margin-left: 600px; */
+    text-align: end;
 }
 .controls span{
 	background:#333;

@@ -572,17 +572,20 @@ iframe{
     margin: 0% 4%;
     padding: 2% 10%; 
     display:flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     border-top: 3px solid black;
 }
 .footer_company{
-    width: 30%;
+    width: 50%;
     font-size: 36px; 
     font-family: 'Monoton', sans-serif; 
-    text-align:center;
+    text-align: center;
 }
-.footer_letter{
+#footer_title{
+    font-size: 24px;
+}
+/* .footer_letter{
     width: 30%; 
     text-align: center;
 }
@@ -593,9 +596,9 @@ iframe{
 }
 .footer_letter button:hover{
     background-color: orange;
-}
+} */
 .footer_feedback{
-    width: 30%; 
+    width: 50%; 
     text-align: center; 
     font-size: 16px;
 }
