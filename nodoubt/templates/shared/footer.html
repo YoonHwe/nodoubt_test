@@ -1,8 +1,8 @@
 <!-- Footer -->
 <div class="footer">
-    <div class="footer_company" style="border: 1px solid black;">
-        <a href="{% url 'main:showmain' %}">NODOUBT</a>
-        <p id="footer_title">취준생 여러분의 취업 성공을 응원합니다.</p>
+    <div class="footer_letter" style="border: 1px solid black;">
+        <a id="footer_company"href="{% url 'main:showmain' %}">NODOUBT</a>
+        <p id="footer_title">취준생 여러분의 취업 성공을 응원합니다</p>
         <p id="footer_content">누구나 내게 맞는 직무를 선택하고 좋은 기업에 들어가고 싶어하지만,</p>
         <p id="footer_content">현실은 자신의 장점조차 찾기 버거운 취업준비를 누구보다 공감하며</p>
         <p id="footer_content">취준생들이 느낄 불편과 힘듦을 조금이나마 덜어주고 싶었습니다.</p>
@@ -10,7 +10,22 @@
     <!-- <div class="footer_letter" style="border: 1px solid black;">
         <a href="{% url 'main:letter' %}"><button>NODOUBT이 드리는 편지</button></a>
     </div> -->
+    {% if user.is_authenticated %}
     <div class="footer_feedback" style="border: 1px solid black;">
-        <a href="{% url 'main:feedback' %}"><button>피드백/질문 작성하기</button></a>
+        <!-- <a href="{% url 'main:feedback' %}"><button>피드백/질문 작성하기</button></a> -->
+        <h1 id="footer_feedback_title">피드백 / 요청사항</h1>
+        <h4 id="footer_feedback_caution">※ 제목과 내용은 필수적으로 작성해주셔야 합니다.</h4>
+        <form action = "{% url 'main:feedback_create' %}" method = "post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p id="footer_feedback_content_title"><input required type="text" name="title" size="30" placeholder="제목"></p>
+            <p id="footer_feedback_content_content"><textarea required type="text" name="content" rows="4" placeholder="내용"></textarea></p>
+            <!-- <p>첨부파일: <input type="file" name="image"></p> -->
+            <p id="footer_feedback_content_email"><input type="text" name="email" size="30" placeholder="답변 받을 이메일"></p>
+            <br>
+            <div id="feedback_submit">
+                <button type="submit">제출</button>
+            </div>
+        </form>
     </div>
+    {% endif %}
 </div>

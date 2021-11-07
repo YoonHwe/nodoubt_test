@@ -367,6 +367,7 @@ a{
     font-weight: bold;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 40px;
 }
 .content_popular_subtitle2{
     font-size: 16px;
@@ -397,7 +398,7 @@ a{
 .content_popular_top_contents img{
     width: 60%;
     height: 50px;
-    margin: 16px 0px 6px 0px;
+    margin: 24px 0px 12px 0px;
 }
 #content_popular_top_contents_company{
     font-size: 24px;
@@ -411,14 +412,8 @@ a{
 }
 #content_popular_top_contents_year{
     font-size: 16px;
-    margin: 6px 0px 0px 0px;
+    margin: 6px 0px 0px 24px;
     font-weight: 300;
-}
-.content_popular_top_contents a{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    padding: 8px;
 }
 .content_popular_top_contents:hover{
     border: 3px solid orange;
@@ -536,17 +531,22 @@ iframe{
     align-items: center;
     border-top: 3px solid black;
 }
-.footer_company{
+.footer_letter{
     width: 50%;
     font-size: 36px; 
-    font-family: 'Monoton', sans-serif; 
-    text-align:center;
+    font-family: 'Monoton', sans-serif;
+    /* text-align:center; */
+}
+#footer_company{
+    border: 1px solid black;
 }
 #footer_title{
     font-size: 32px;
+    border: 1px solid black;
 }
 #footer_content{
     font-size: 16px;
+    border: 1px solid black;
 }
 /* .footer_letter{
     width: 30%; 
@@ -562,15 +562,39 @@ iframe{
 } */
 .footer_feedback{
     width: 50%; 
-    text-align: center; 
     font-size: 16px;
+    text-align: center;
 }
-.footer_feedback button{
+#footer_feedback_title{
+    text-align: center;
+    font-weight: 400;
+}
+#footer_feedback_caution{
+    text-align: center;
+    font-weight: 200;
+}
+#footer_feedback_content_title input{
+    width: 280px;
+}
+#footer_feedback_content_content textarea{
+    width: 280px;
+}
+#footer_feedback_content_email input{
+    width: 280px;
+}
+/* .footer_feedback button{
     font-size: 16px; 
-    padding: 4% 8%; 
+    padding: 4px 24px; 
     border-radius: 10px;
+} */
+#feedback_submit{
+    margin-top: -20px;
+    margin-left: 200px;   
 }
-.footer_feedback button:hover{
+#feedback_submit button{
+    padding: 4px 12px;
+}
+#feedback_submit button:hover{
     background-color: orange;
 }
 /*letter*/
@@ -748,15 +772,14 @@ iframe{
 .slide_wrapper{
 	position: relative;
 	margin: 0 auto;
-    /* width: 4000px; */
 	height: 180px;
 	overflow: hidden;
+    /* border: 5px solid orange; */
 }
 .slides{
 	position: absolute;
-	left:0;
-    top: 20px;	
-    /* border: 8px solid blue; */
+	left: 0;
+    top: 12px;
 }
 .slides.animated{
 	transition: 0.5s ease-in-out;
@@ -764,13 +787,11 @@ iframe{
 .slides{
 	float: left;
 }
-.content_popular_top_contents:not(:last-child){	
+.content_popular_top_box:not(:last-child){	
 	margin-right: 30px;
 }
 .controls{
 	text-align: center;
-	/* margin-top: 180px; */
-    /* margin-left: 600px; */
     text-align: end;
 }
 .controls span{
