@@ -4,7 +4,6 @@
 {% block content %}
 <div>
 	<h1>글 작성하기</h1>
-	
 	<form action = "{% url 'main:create' %}" method = "post" enctype="multipart/form-data">
     	{% csrf_token %}
     	<p>회사: <input type="text" name="company"></p>
