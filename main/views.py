@@ -59,10 +59,11 @@ def delete(request, id):
 def request_create(request):
     new_request = Request()
     new_request.employ_type = request.POST['employ_type']
-    new_request.job_type = request.POST['job_type']
+    new_request.company_name = request.POST['company_name']
+    new_request.school_major = request.POST['school_major']
     new_request.name = request.POST['name']
-    new_request.school_number = request.POST['school_number']
     new_request.email = request.POST['email']
+    new_request.phone_num = request.POST['phone_num']
     new_request.pub_date = timezone.now()
     new_request.writer = request.user
     new_request.save()
