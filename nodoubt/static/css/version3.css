@@ -331,7 +331,6 @@ a{
 .content_popular_title{
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
     margin-top: 30px;
 }
@@ -376,60 +375,114 @@ a{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-/**/
+/* 직무 / 자격증 */
 .content_issue{
-    padding: 0% 6%;
+    padding: 0% 10%;
+    background-color: rgba(130, 168, 212, 0.1);
 }
-.content_issue_title{
-    padding-top: 60px;
-    font-size: 30px;
+#content_issue_first_title{
+    font-size: 30px; /*수정*/
+    margin-bottom: 20px; /*수정*/
+    padding-top: 50px;
     font-weight: bold;
-    margin-bottom: 2%;
-    text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
 }
-.content_issue_category{
+#content_issue_first_subtitle{
+    font-size: 18px; /*수정*/
+    margin: 20px 0px 20px 28px; /*수정*/
+}
+#content_issue_first{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
-.content_issue_category_list{
-    display: flex;
+#content_issue_video{
+    border: 1px solid black;
+    margin: 0px 10px; /*수정*/
+}
+#content_issue_video_iframe{
+    width: 24vw; /*수정*/
+    height: 16vw; /*수정*/
+}
+#content_issue_video_title{
+    font-size: 16px; /*수정*/
+    font-weight: 700;
     text-align: center;
-    justify-content: center;
-    width: 180px;
 }
-.content_issue_category_list h3{
-    margin: 0px 30px;
-    font-size: 16px;
+#content_issue_video_subtitle{
+    font-size: 12px; /*수정*/
+    font-weight: 500;
+    text-align: center;
+    margin-top: -4px;
 }
-.content_issue_category_list h3:hover{
-    color: orange;
+.controls{
+    text-align: end;
+}
+.controls span{
+    background-color: #333;
+    color: white;
+    border-radius: 10%; 
+	padding: 6px 14px; /*수정*/
+	margin: 0px 4px; /*수정*/
+    font-size: 12px;
+}
+.controls span:hover{
     cursor: pointer;
 }
-.content_issue_category_list:focus{
+.prev:hover{
+    background-color: orange;
+}
+.next:hover{
+    background-color: orange;
+}
+
+.content_issue_second_title{
+    margin: 50px 0px 20px 0px; /*수정*/
+    font-size: 30px; /*수정*/
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.content_issue_second_category{
+    display: flex;
+    margin-top: 20px;
+}
+.content_issue_second_category_list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.content_issue_second_category_list h3{
+    margin: 0px 20px;
+    padding: 2px;
+    font-weight: 400;
+}
+.content_issue_second_category_list h3:hover{
+    color: orange;
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+.content_issue_second_category_list:focus{
     border: 1px solid black;
 }
-.content_issue_list{
+.content_issue_second_list{
     padding-bottom: 50px;
 }
 .list_content{
     margin-top: 9px;
-    padding: 0px 10px;
+    padding: 0px 12px;
 }
 .list_content_border{
     border-top: 1px solid rgb(146, 140, 140);
-    /* border-bottom: 1px solid rgb(146, 140, 140); */
+}
+.list_content h2{
+    font-size: 22px;
+}
+.list_content h3{
+    font-size: 18px;
 }
 .list_content_link:hover{
     color: orange;
 }
-.list_content_link h2{
-    font-size: 20px;
-}
-.list_content_link h3{
-    font-size: 16px;
-}
+
 /* 다섯번째 칸 - 취업 준비 자료 */
 .content_ready{
     padding: 0% 4%;
