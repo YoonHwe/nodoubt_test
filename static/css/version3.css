@@ -67,7 +67,6 @@ a{
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .dropdown-content a {
     color: black;
     text-decoration: none;
@@ -75,151 +74,100 @@ a{
     padding: 4px 8px;
     border-radius: 10px;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
-}
-.dropdown:hover .dropdown-content{
-    display: block;
 }
 .dropdown:hover .dropbtn{
     color: orange;
 }
-.dropbtn_color_orange{
-    color:orange;
-}
-.dropdown_display_block{
-    display: block;
-}
+
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
-    background-color: rgba(130, 168, 212, 0.1); 
+    display: flex;
+    padding: 4% 10% 2% 10%;
+    background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
+    background-image: url('/static/images/content_first_background.png');
+    background-size: 110%;
+    background-repeat: no-repeat;
 }
-.content_first_upper{
-    padding: 4% 12% 2% 12%;
-    display: flex; 
-    justify-content: space-between; 
-    padding-bottom: 40px;
+.content_first_left{
+    width: 70%;
 }
-.content_first_upper_left{
-    /* border: 1px solid red; */
+.content_first_left_upper{
+    font-size: 28px;
+    font-weight: bold;
 }
-.content_first_upper_left p{
-    font-size: 32px; 
-    opacity: .1;
+.content_first_left_upper p:last-child{
+    margin-top: -28px;
 }
-.content_first_upper_middle{
-    text-align: center;
+.content_first_left_lower{
+    /* border: 1px solid black; */
 }
-.content_first_upper_middle_top{
-    display: flex; 
-    justify-content: center; 
-    margin-bottom: -44px;
+.content_first_left_lower_label{
+    font-size: 16px;
 }
-.content_first_upper_middle_top h1{
-    font-size: 40px;
+.content_first_left_lower_option{
+    margin-top: -10px;
 }
-.content_first_upper_middle_top h1:last-child{
+.content_first_left_lower_option li{
+    opacity: .5;
+    list-style: none;
+}
+.content_first_left_lower_option li:hover{
+    opacity: 1;
+}
+.content_first_left_lower_option a{
+    font-size: 16px;
+    color: black;
+    opacity: .5;
+}
+.content_first_left_lower_option a:hover{
+    opacity: 1;
+    cursor: pointer;
     color: orange;
+    font-weight: bold;
+
 }
-.content_first_upper_middle_h1{
-    font-size: 40px;
+.content_first_left_lower_option a:hover i{
+    margin-left: 16px;
 }
-.content_first_upper_middle_h3_first{
-    margin-bottom: -20px;
-    opacity: .6;
+.content_first_right{
+    width: 30%;
 }
-.content_first_upper_middle_h3_second{
-    opacity: .6;
-}
-.content_first_upper_right{
-    /* border: 1px solid blue; */
-}
-.content_first_upper_right p{
-    font-size: 32px;
-    opacity: .1;
-}
-.content_first_lower{
-    display: flex; 
-    justify-content: space-between; 
-    margin: 0 auto;
-    padding: 4% 4% 2% 4%;
-}
-.content_first_lower_content{
-    width: 30%; 
-    text-align: center;
-}
-.content_first_lower_content i{
-     /* border: 1px solid black; */
-}
-.content_first_lower_content h3{
-    color: orange;
-}
-.content_first_lower_content h5{
-    opacity: .6;
-    font-size: 12px;
-}
+
 /* 두번째 칸 - 인스트럭션 + 지원서 */
 .content_second{ 
-    padding: 2% 6% 4% 6%; 
+    padding: 4% 10% 2% 10%; 
     animation: goOpacityUp 2s ease-in-out;
-}
-.content_second_upper{
     display: flex; 
-    border-bottom: 1px solid black
 }
 .content_second_upper_left{
-    margin: 0% 2%; 
-    width: 64%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center;
-}
-.content_second_upper_left h2{
-    opacity: .6;
-    font-size: 20px;
-}
-.content_second_upper_left h1{
-    font-size: 26px;
-}
-.content_second_upper_left h4{
-    margin-left: 8%;
-    font-size: 14px;
-}
-.content_second_upper_right{
-    margin: 0% 2%; 
     width: 50%; 
     display: flex; 
     justify-content: center; 
     align-items: center;
 }
-.content_second_upper_right img{
+.content_second_upper_left img{
     width: 80%; 
-    height: 80%; 
+    height: 300px; 
     border: 1px solid black; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
-.content_second_dtime{
+.content_second_upper_right{
+    width: 50%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
     text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    padding-top: 28px;
 }
-.content_second_dtime_h1{
-    font-size: 30px;
-}
-.content_second_dtime_clock{
+.content_second_upper_right h1{
     font-size: 24px;
 }
-.content_second_dtime_input_button{
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    font-size: 16px;
-}
-.content_second_dtime_input_button:hover{
-    background-color: orange;
+.content_second_upper_right p{
+    font-size: 20px;
+    margin-top: -20px;
 }
 .black_bg{
     display: none; 
@@ -240,6 +188,18 @@ a{
     justify-content: center;
     align-items: center;
 }
+#modal_btn{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+#modal_btn:hover{
+    opacity: .3;
+    cursor: pointer;
+    text-decoration: none;
+}
+#modal_btn:hover + #content_second_upper_right_arrow{
+    animation: goRightandLeft .5s ease-in-out infinite;
+}
 .modal_wrap{
     display: none; 
     width: 500px; 
@@ -253,9 +213,9 @@ a{
 }
 .modal_close{
     border: 1px solid black; 
-    margin-top:-36px; 
+    margin-top: -36px; 
     background-color: white; 
-    height: 20px; 
+    height: 24px; 
     width: 20px; 
     display: flex; 
     justify-content: center; 
@@ -271,7 +231,7 @@ a{
     padding: 0% 20%;
     height: 100%;
     background-color: white;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -295,10 +255,11 @@ a{
     text-align: center;
     width: 80px;
 }
-.content_second_select_input{
+.content_second_select_input_one{
     display: flex; 
     justify-content: center; 
     align-items: center;
+    padding-left: 15px;
 }
 .content_second_select_input_two{
     display: flex; 
@@ -312,31 +273,30 @@ a{
     justify-content: center; 
     align-items: center;
     margin-top: 4px; 
+    padding-left: 30px;
+}
+.content_second_select_input_four{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     padding-left: 15px;
+}
+.content_second_select_input_five{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    /* padding-left: 10px; */
 }
 .underline{
     border-left-width: 0;
     border-right-width: 0;
     border-top-width: 0;
 }
-.content_second_name, .content_second_school_number, .content_second_email{
+.content_second_inputs{
     height: 30px;
 }
-.content_second_private{
-    margin: 20px 0px;
-}
-.content_second_right_instruction_sample{
-    text-align: center;
-}
-.content_second_right_instruction_sample_button{
-    margin: 20px 0px;
-    border-radius: 50px;
-    width: 100px;
-    background-color: #82a8d41a;
-    padding: 1px;
-}
 .content_second_submit{
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
     border-radius: 50px;
     width: 100px;
     background-color: #82a8d41a;
@@ -357,124 +317,65 @@ a{
 #content_second_left_application_submit_signup{
     padding: 0px 10px;
 }
-.content_second_right{
-    width: 40%;
-    height: 484px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-}
-.content_second_right_instruction{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
-    display: flex;
-    flex-direction: column;
-}
-.content_second_right_instruction > h2{
-    margin-top: 37px;
-    text-align: center;
-}
-.content_second_right_instruction_image{
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, .5);
-    width: 100%;
-    height: 250px;
-}
-.content_second_right_instruction_content{
-    display: flex;
-}
-.content_second_right_instruction p{
-    font-size: 20px;
-    text-align: start;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-}
-.fa-circle{
-    font-size: 1px;
-}
-.content_second_search{
-    text-align: center;
-    margin: 2px;
-    width: 30%;
-}
 .content_second_h2{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 2%;
 }
-/**/
+/* 취업 정보 컨텐츠 */
 .content_popular{
-    padding: 0% 6%;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: rgba(130, 168, 212, 0.1);
+    padding: 0% 10%;
+    /* background-color: rgba(130, 168, 212, 0.1); */
 }
 .content_popular_title{
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 2%;
     text-align: center;
     font-family: 'Noto Sans KR', sans-serif;
-}
-.content_popular_subtitle1{
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-.content_popular_subtitle2{
-    font-size: 16px;
-    text-align: center;
-    font-family: 'Noto Sans KR', sans-serif;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
-    width: 50%;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 .content_popular_top{
+    padding: 20px 0px 0px 0px;
     text-align: center;
-    padding: 20px 0px;
+    margin: 0 auto;
+}
+.content_popular_top_box{	
+	margin: 0px 10px;
 }
 .content_popular_top_contents{
     display: inline-block;
     position: relative;
-    border: 1px solid black; 
-    width: 200px;
-    height: 160px;
-    padding: 0px 8px;
-    margin: 20px 20px;
-    border-radius: 10px;
+    width: 160px;
+    height: 144px;
+    padding: 0px 10px;
     border: 1px solid gray;
+    border-radius: 15px;
     vertical-align: middle;
     text-align: left;
+    background-color: white;
+    margin: 0px 0px 20px 0px;
+}
+.content_popular_top_contents img{
+    width: 60%;
+    height: 40px;
+    margin: 20px 0px 8px 0px;
 }
 #content_popular_top_contents_company{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
-    margin: 26px 0px 6px 0px;
+    margin: 4px 0px 4px 0px;
 }
 #content_popular_top_contents_job{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 6px 0px;
-}
-#content_popular_top_contents_year{
     font-size: 16px;
-    margin: 6px 0px 0px 0px;
-    font-weight: 300;
-}
-.content_popular_top_contents a{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    padding: 8px;
+    font-weight: 400;
+    margin: 4px 0px;
 }
 .content_popular_top_contents:hover{
-    background-color: orange;
+    border: 3px solid orange;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+
 /**/
 .content_issue{
     padding: 0% 6%;
