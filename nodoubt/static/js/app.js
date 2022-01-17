@@ -27,11 +27,12 @@ category_second.style.color = "black";
 category_third.style.color = "black";
 category_fourth.style.color = "black";
 category_first_h3.style.borderBottom = "2px solid black";
-first.innerHTML = "<a class='list_content_link' href='https://daily.siwonschool.com/?s=event&t=dailyenglish' target='_blank'><h2>시원스쿨</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>영어가 안되면 시원스쿨!</h3>";
-second.innerHTML = "<a class='list_content_link' href='http://toeic.ybmclass.com/event/210618_toeic/?utm_source=Google&utm_medium=CPC&utm_campaign=ybmtoeic_web&utm_content=toeic_madtoeic_2106&ACE_REF=adwords_g&ACE_KW=ybm' target='_blank'><h2>YBM</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>TOEIC 공식 사이트</h3>";
-third.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-fourth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-fifth.innerHTML = "";
+category_first_h3.style.fontWeight = "bold";
+first.innerHTML = "<a class='list_content_link' href='https://www.hackers.co.kr/' target='_blank'><h2>해커스</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>기초영어</span>&nbsp;...</h3>";
+second.innerHTML = "<a class='list_content_link' href='https://www.ybm.co.kr/' target='_blank'><h2>YBM</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>영어</span>&nbsp;<span id='list_content_link_tag'>중국어</span>&nbsp;<span id='list_content_link_tag'>일어</span>&nbsp;...</h3>";
+third.innerHTML = "<a class='list_content_link' href='https://eng.conects.com/' target='_blank'><h2>영단기</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>토플</span>&nbsp;...</h3>";
+fourth.innerHTML = "<a class='list_content_link' href='https://www.pagodastar.com/' target='_blank'><h2>파고다</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토플</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>아이엘츠</span>&nbsp;...</h3>";
+fifth.innerHTML = "<a class='list_content_link' href='https://lab.siwonschool.com/' target='_blank'><h2>시원스쿨</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>아이엘츠</span>&nbsp;...</h3>";
 sixth.innerHTML = "";
 
 function paintList(event){    
@@ -44,11 +45,15 @@ function paintList(event){
         category_second_h3.style.borderBottom = "";
         category_third_h3.style.borderBottom = "";
         category_fourth_h3.style.borderBottom = "";
-        first.innerHTML = "<a class='list_content_link' href='https://daily.siwonschool.com/?s=event&t=dailyenglish' target='_blank'><h2>시원스쿨</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>영어가 안되면 시원스쿨!</h3>";
-        second.innerHTML = "<a class='list_content_link' href='http://toeic.ybmclass.com/event/210618_toeic/?utm_source=Google&utm_medium=CPC&utm_campaign=ybmtoeic_web&utm_content=toeic_madtoeic_2106&ACE_REF=adwords_g&ACE_KW=ybm' target='_blank'><h2>YBM</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>TOEIC 공식 사이트</h3>";
-        third.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        fourth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        fifth.innerHTML = "";
+        category_first_h3.style.fontWeight = "bold";
+        category_second_h3.style.fontWeight = "";
+        category_third_h3.style.fontWeight = "";
+        category_fourth_h3.style.fontWeight = "";
+        first.innerHTML = "<a class='list_content_link' href='https://www.hackers.co.kr/' target='_blank'><h2>해커스</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>기초영어</span>&nbsp;...</h3>";
+        second.innerHTML = "<a class='list_content_link' href='https://www.ybm.co.kr/' target='_blank'><h2>YBM</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>영어</span>&nbsp;<span id='list_content_link_tag'>중국어</span>&nbsp;<span id='list_content_link_tag'>일어</span>&nbsp;...</h3>";
+        third.innerHTML = "<a class='list_content_link' href='https://eng.conects.com/' target='_blank'><h2>영단기</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>토플</span>&nbsp;...</h3>";
+        fourth.innerHTML = "<a class='list_content_link' href='https://www.pagodastar.com/' target='_blank'><h2>파고다</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토플</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>아이엘츠</span>&nbsp;...</h3>";
+        fifth.innerHTML = "<a class='list_content_link' href='https://lab.siwonschool.com/' target='_blank'><h2>시원스쿨</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>토익</span>&nbsp;<span id='list_content_link_tag'>토스</span>&nbsp;<span id='list_content_link_tag'>오픽</span>&nbsp;<span id='list_content_link_tag'>텝스</span>&nbsp;<span id='list_content_link_tag'>아이엘츠</span>&nbsp;...</h3>";
         sixth.innerHTML = "";
     }
     if(event === 2){
@@ -60,12 +65,16 @@ function paintList(event){
         category_second_h3.style.borderBottom = "2px solid black";
         category_third_h3.style.borderBottom = "";
         category_fourth_h3.style.borderBottom = "";
-        first.innerHTML = "<a class='list_content_link' href='https://www.youtube.com/channel/UC0MVv0wGYB078pISgHFwhzQ' target='_blank'><h2>최태성 1TV</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>한국사 강의 1위 최태성의 유튜브 무료 강의</h3>";
-        second.innerHTML = "<a class='list_content_link' href='https://www.ebsi.co.kr/ebs/lms/lmsx/retrieveSbjtDtl.ebs?courseId=S20130000116' target='_blank'><h2>NCS</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>NCS 수리와 비슷한 대입적성검사 수리 유형의 무료 강의 입문자 추천</h3>";
-        third.innerHTML = "<a class='list_content_link' href='https://www.namucpa.com/main/main.asp' target='_blank'><h2>나무경영아카데미</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>CPA 재무 관련 인강으로 금융공기업 준비생에게 추천</h3>";
-        fourth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        fifth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        sixth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
+        category_first_h3.style.fontWeight = "";
+        category_second_h3.style.fontWeight = "bold";
+        category_third_h3.style.fontWeight = "";
+        category_fourth_h3.style.fontWeight = "";
+        first.innerHTML = "<a class='list_content_link' href='https://www.eduwill.net/Basic/global_main.asp' target='_blank'><h2>에듀윌</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>기사/산업기사/기능사</span>&nbsp;<span id='list_content_link_tag'>경영지도사</span>&nbsp;<span id='list_content_link_tag'>공인중개사</span>&nbsp;<span id='list_content_link_tag'>한국사능력검정</span>&nbsp;...</h3>";
+        second.innerHTML = "<a class='list_content_link' href='https://pass.hackers.com/' target='_blank'><h2>해커스자격증</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>기사/산업기사</span>&nbsp;<span id='list_content_link_tag'>컴퓨터활용능력</span>&nbsp;<span id='list_content_link_tag'>워드프로세서</span>&nbsp;<span id='list_content_link_tag'>공인중개사</span>&nbsp;...</h3>";
+        third.innerHTML = "<a class='list_content_link' href='https://www.youtube.com/channel/UC0MVv0wGYB078pISgHFwhzQ' target='_blank'><h2>최태성 1TV</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>한국사능력검정</h3>";
+        fourth.innerHTML = "<a class='list_content_link' href='https://www.itbtm.com/' target='_blank'><h2>IT버팀목</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>컴퓨터활용능력</h3>";
+        fifth.innerHTML = "<a class='list_content_link' href='http://qulab.co.kr/que/board.php?board=home' target='_blank'><h2>퀘스천랩</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>사회조사분석사</span></h3>";
+        sixth.innerHTML = "";
     }
     if(event === 3){        
         category_first.style.color = "black";
@@ -76,12 +85,16 @@ function paintList(event){
         category_second_h3.style.borderBottom = "";
         category_third_h3.style.borderBottom = "2px solid black";
         category_fourth_h3.style.borderBottom = "";
-        first.innerHTML = "<a class='list_content_link' href='http://www.qulab.co.kr/que/board.php?board=home' target='_blank'><h2>퀘스천랩</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>사경환 강사의 사회 조사분석사 인강으로</h3>";
-        second.innerHTML = "<a class='list_content_link' href='https://fn.hackers.com/site/event_master/?evt_id=17042800&_C_=139999&gclid=Cj0KCQjwvaeJBhCvARIsABgTDM6yG6ScesEVKSbxT7e3DzsL7lewNuhkr50b9rHHfqhZo7cFfZjyQaAaAnKDEALw_wcB' target='_blank'><h2>해커스</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>금융관련 취업 준비생들에게 추천</h3>";
-        third.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        fourth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        fifth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
-        sixth.innerHTML = "<a class='list_content_link' href='' target='_blank'><h2></h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'></h3>";
+        category_first_h3.style.fontWeight = "";
+        category_second_h3.style.fontWeight = "";
+        category_third_h3.style.fontWeight = "bold";
+        category_fourth_h3.style.fontWeight = "";
+        first.innerHTML = "<a class='list_content_link' href='http://www.dataedu.kr/' target='_blank'><h2>데이터에듀</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>데이터분석전문가(ADP)</span>&nbsp;<span id='list_content_link_tag'>데이터분석준전문가(ADsP)</span>&nbsp;...</h3>";
+        second.innerHTML = "<a class='list_content_link' href='https://www.epasskorea.com/' target='_blank'><h2>이패스코리아</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>회계관리</span>&nbsp;<span id='list_content_link_tag'>전산세무</span>&nbsp;<span id='list_content_link_tag'>전산회계</span>&nbsp;<span id='list_content_link_tag'>데이터분석준전문가(ADsP)</span>&nbsp;...</h3>";
+        third.innerHTML = "<a class='list_content_link' href='https://fn.hackers.com/' target='_blank'><h2>해커스금융</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>전산세무</span>&nbsp;<span id='list_content_link_tag'>전산회계</span>&nbsp;<span id='list_content_link_tag'>KBS한국어능력</span>&nbsp;...</h3>";
+        fourth.innerHTML = "<a class='list_content_link' href='https://kor.eduwill.net/8lang/Main.asp' target='_blank'><h2>에듀윌 KBS한국어/실용글쓰기</h2></a><h3 id='list_content_link_exp'>&nbsp;<span id='list_content_link_tag'>KBS한국어능력</h3>";
+        fifth.innerHTML = "";
+        sixth.innerHTML = "";
     }
     if(event === 4){     
         category_first.style.color = "black";
@@ -92,12 +105,16 @@ function paintList(event){
         category_second_h3.style.borderBottom = "";
         category_third_h3.style.borderBottom = "";
         category_fourth_h3.style.borderBottom = "2px solid black";
-        first.innerHTML = "<a class='list_content_link' href='https://brunch.co.kr/@kindoublej#articles' target='_blank'><h2>하리하리</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>자소서 예시 및 정보를 공유하는 블로그</h3>";
-        second.innerHTML = "<a class='list_content_link' href='https://publy.co/' target='_blank'><h2>퍼블리</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>취업, 이직은 물론 여러 직무에 관한 정보를 제공하는 뉴스레터 플랫폼</h3>";
-        third.innerHTML = "<a class='list_content_link' href='https://blog.naver.com/darddong' target='_blank'><h2>옴스잡스</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>자소서 및 면접에 관한 팁을 공유하는 블로그</h3>";
-        fourth.innerHTML = "<a class='list_content_link' href='https://cafe.daum.net/breakjob' target='_blank'><h2>취업뽀개기</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>각종 취업관련 자료 및 정보를 공유하는 커뮤니티</h3>";
-        fifth.innerHTML = "<a class='list_content_link' href='https://cafe.naver.com/dokchi/' target='_blank'><h2>독하게 취업하는 사람들</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>각종 취업관련 자료 및 정보를 공유하는 커뮤니티 </h3>";
-        sixth.innerHTML = "<a class='list_content_link' href='https://cafe.naver.com/specup' target='_blank'><h2>스펙업</h2></a><h3 style='opacity: 0.5; margin: -10px 0px 0px 10px;'>취업정보 및 스펙을 위한 정보를 공유하는 커뮤니티</h3>";
+        category_first_h3.style.fontWeight = "";
+        category_second_h3.style.fontWeight = "";
+        category_third_h3.style.fontWeight = "";
+        category_fourth_h3.style.fontWeight = "bold";
+        first.innerHTML = "";
+        second.innerHTML = "";
+        third.innerHTML = "";
+        fourth.innerHTML = "";
+        fifth.innerHTML = "";
+        sixth.innerHTML = "";
     }
 }
 

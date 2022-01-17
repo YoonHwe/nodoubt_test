@@ -472,10 +472,22 @@ a{
     font-size: 14px;
 }
 .list_content h3{
-    font-size: 12px;
+    font-size: 10px;
 }
 .list_content_link:hover{
     color: orange;
+}
+#list_content_link_tag{
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 0px 4px;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: white;
+}
+#list_content_link_exp{
+    opacity: 0.7;
+    margin: -6px 0px 0px 10px;
 }
 /* 다섯번째 칸 - 취업 준비 자료 */
 .content_ready{
