@@ -406,6 +406,7 @@ a{
     border-radius: 10%;
 	padding: 10px 20px;
 	margin: 0 4px;
+    font-size: 16px;
 }
 .controls span:hover{
     cursor: pointer;
@@ -416,7 +417,97 @@ a{
 .next:hover{
     background-color: orange;
 }
-
+.content_issue_tablet{
+    display: none;
+}
+#content_issue_tablet_first{
+    /* display: flex;
+    justify-content: center; */
+}
+#content_issue_tablet_video{
+    /* border: 1px solid black;
+    margin: 0px 10px; */
+}
+#content_issue_tablet_video_iframe{
+    /* width: 320px;
+    height: 212px; */
+}
+#content_issue_tablet_video_title{
+    /* font-size: 20px;
+    font-weight: 700;
+    text-align: center; */
+}
+#content_issue_tablet_video_subtitle{
+    /* font-size: 16px;
+    font-weight: 500;
+    text-align: center; */
+}
+#tablet_controls{
+    /* text-align: end; */
+}
+#tablet_controls span{
+    /* background-color: #333;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+	padding: 10px 20px;
+	margin: 0 4px; */
+}
+#tablet_controls span:hover{
+    /* cursor: pointer; */
+}
+#tablet_prev:hover{
+    /* background-color: orange; */
+}
+#tablet_next:hover{
+    /* background-color: orange; */
+}
+.content_issue_mobile{
+    display: none;
+}
+#content_issue_mobile_first{
+    /* display: flex;
+    justify-content: center; */
+}
+#content_issue_mobile_video{
+    /* border: 1px solid black;
+    margin: 0px 10px; */
+}
+#content_issue_mobile_video_iframe{
+    /* width: 320px;
+    height: 212px; */
+}
+#content_issue_mobile_video_title{
+    /* font-size: 20px;
+    font-weight: 700;
+    text-align: center; */
+}
+#content_issue_mobile_video_subtitle{
+    /* font-size: 16px;
+    font-weight: 500;
+    text-align: center; */
+}
+#mobile_controls{
+    /* text-align: end; */
+    display: none;
+}
+#mobile_controls span{
+    /* background-color: #333;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10%;
+	padding: 10px 20px;
+	margin: 0 4px; */
+}
+#mobile_controls span:hover{
+    /* cursor: pointer; */
+}
+#mobile_prev:hover{
+    /* background-color: orange; */
+}
+#mobile_next:hover{
+    /* background-color: orange; */
+}
 .content_issue_second_title{
     margin: 80px 0px 20px 0px;
     font-size: 32px;
