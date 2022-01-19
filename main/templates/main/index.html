@@ -16,7 +16,7 @@
             <ul class="content_first_left_lower_option">
                 <li><a onclick="fnMove('popular')"><i class="fas fa-circle"></i>&nbsp;&nbsp;선배들의 취업정보&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
                 <li><a onclick="fnMove('issue')"><i class="fas fa-circle"></i>&nbsp;&nbsp;취업 준비가 처음일 때&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
-                <li><a onclick="fnMove('popular')"><i class="fas fa-circle"></i>&nbsp;&nbsp;나의 자소서가 불안하다면&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                <li><a onclick="fnMove('ready')"><i class="fas fa-circle"></i>&nbsp;&nbsp;나의 자소서가 불안하다면&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
                 <li><a onclick="fnMove('ready')"><i class="fas fa-circle"></i>&nbsp;&nbsp;면접에 대하여&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
             </ul>
         </div>
@@ -359,18 +359,18 @@
     <div class="content_ready_content">
         <div class="content_ready_content_contents">
             <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
-                <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png'>
+                <img src="{% static 'images/dongguk.png' %}" style="width: 80%; height: 40%; padding: 20px 0px; border: 1px solid black;">
                 <p id="content_ready_content_contents_title">주요 기업 정보</p>
                 <p id="content_ready_content_contents_name">동국대학교</p>
                 <p id="content_ready_content_contents_exp">기업 정보 조회 서비스</p>
             </a>
         </div>
         <div class="content_ready_content_contents">
-            <a href = "https://ddp.dongguk.edu/site/educe/play/playview?menuid=001005004001&play_goods=152&searchplayapt=4" target="_blank">
-                <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png'>
-                <p id="content_ready_content_contents_title">자기소개서 교육</p>
-                <p id="content_ready_content_contents_name">동국대학교(에듀스)</p>
-                <p id="content_ready_content_contents_exp">자기소개서 작성 교육업체의 인터넷 강의</p>
+            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+                <img src="{% static 'images/dongguk.png' %}" style="width: 80%; height: 40%; padding: 35px 0px 0px 0px;">
+                <p id="content_ready_content_contents_title">주요 기업 정보</p>
+                <p id="content_ready_content_contents_name">동국대학교</p>
+                <p id="content_ready_content_contents_exp">기업 정보 조회 서비스</p>
             </a>
         </div>
         <div class="content_ready_content_contents">
@@ -410,4 +410,72 @@
     </div>
 </div>
 
+<div style="border: 5px solid gold;">
+    <div>자기소개서 작성 시 참고할 것</div>
+    <div>&nbsp;&nbsp;&nbsp;<i class="far fa-dot-circle"></i>&nbsp;동국대학교 관련 링크는 동국대학교 홈페이지 로그인 후 링크 재방문</div>
+    <div>
+        <div class="content_ready_content_contents" >
+            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+                <div style="display: flex;">
+                    <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png' style="width: 120px; padding: 10px 10px; border: 1px solid blue;">
+                    <div style="width: 160px; border: 1px solid blue;">
+                        <p>주요 기업 정보</p>
+                        <p>동국대학교</p>
+                        <p>기업 정보 조회 서비스</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="content_ready_content_contents" >
+            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+                <div style="display: flex;">
+                    <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png' style="width: 160px; border: 1px solid blue;">
+                    <div style="width: 160px; border: 1px solid blue;">
+                        <p>주요 기업 정보</p>
+                        <p>동국대학교</p>
+                        <p>기업 정보 조회 서비스</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="content_ready_content_contents" >
+            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+                <div style="display: flex;">
+                    <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png' style="width: 160px; border: 1px solid blue;">
+                    <div style="width: 160px; border: 1px solid blue;">
+                        <p>주요 기업 정보</p>
+                        <p>동국대학교</p>
+                        <p>기업 정보 조회 서비스</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- <div class="content_ready_content">
+        <div class="content_ready_content_contents">
+            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+                <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png'>
+                <p id="content_ready_content_contents_title">합격자 자소서 공유</p>
+                <p id="content_ready_content_contents_name">동국대학교(에듀스)</p>
+                <p id="content_ready_content_contents_exp">기업별 자소서 문항에 맞는 합격자의 자소서를 볼 수 있음</p>
+            </a>
+        </div>
+        <div class="content_ready_content_contents">
+            <a href = "https://ddp.dongguk.edu/site/counsel/coal/jobReservlist?menuid=001004012&counseltype=9" target="_blank">
+                <img src='https://ddp.dongguk.edu/files/web1/images/common/logo.png'>
+                <p id="content_ready_content_contents_title">글쓰기 상담</p>
+                <p id="content_ready_content_contents_name">동국대학교</p>
+                <p id="content_ready_content_contents_exp">학교에서 제공하는 학업 관련 보고서와 에세이, 취업을 위한 자기소개서 상담 서비스</p>
+            </a>
+        </div>
+        <div class="content_ready_content_contents">
+            <a href = "https://brunch.co.kr/@kindoublej#articles" target="_blank">
+                <img src='data:image/png;base64,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'>
+                <p id="content_ready_content_contents_title">하리하리</p>
+                <p id="content_ready_content_contents_name">브런치(블로그)</p>
+                <p id="content_ready_content_contents_exp">기업별 자소서 문항의 예시를 작성하여 샘플로 제공</p>
+            </a>
+        </div> -->
+    </div>
+</div>
 {% endblock %}
