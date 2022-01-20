@@ -612,21 +612,25 @@ a{
     border: 1px solid orange;
 }
 .content_ready_content_contents img{
-    width: 100%;
-    height: 12vw;
+    width: 80%;
+    height: 40%;
+    padding: 8px 0px 2px 0px;
 }
 #content_ready_content_contents_title{
     font-size: 12px;
     font-weight: 700;
+    margin-top: -1px;
 }
 #content_ready_content_contents_name{
     font-size: 8px;
     font-weight: 500;
+    margin-top: -8px;
+    padding-bottom: 8px;
 }
 #content_ready_content_contents_exp{
     visibility: hidden;
     text-align: center;
-    top: 72%;
+    top: 60%;
     position: absolute;
     width: 100%;
     font-size: 6px;
