@@ -692,8 +692,8 @@ a{
 /**/
 .footer{
     margin: 0% 4%;
-    padding: 2% 10%; 
-    display:flex; 
+    padding: 2% 12%; 
+    display: flex; 
     justify-content: center; 
     align-items: center;
     border-top: 3px solid black;
@@ -701,36 +701,24 @@ a{
 .footer_letter{
     width: 50%;
     font-size: 36px; 
-    font-family: 'Monoton', sans-serif;
-    /* text-align:center; */
+    height: 320px;
 }
 #footer_company{
-    border: 1px solid black;
+    font-family: 'Monoton', sans-serif;
 }
 #footer_title{
-    font-size: 32px;
-    border: 1px solid black;
+    font-size: 30px;
 }
 #footer_content{
     font-size: 16px;
-    border: 1px solid black;
+    margin-top: -12px;
 }
-/* .footer_letter{
-    width: 30%; 
-    text-align: center;
-}
-.footer_letter button{
-    font-size: 16px; 
-    padding: 4% 8%; 
-    border-radius: 10px;
-}
-.footer_letter button:hover{
-    background-color: orange;
-} */
+
 .footer_feedback{
     width: 50%; 
     font-size: 16px;
     text-align: center;
+    height: 320px;
 }
 #footer_feedback_title{
     text-align: center;
@@ -739,6 +727,17 @@ a{
 #footer_feedback_caution{
     text-align: center;
     font-weight: 200;
+}
+#footer_feedback_link{
+    display: none;
+}
+#footer_feedback_link_anchor{
+    border: 1px solid orange;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+#footer_feedback_link_anchor:hover{
+    background-color: orange;
 }
 #footer_feedback_content_title input{
     width: 280px;
@@ -749,20 +748,16 @@ a{
 #footer_feedback_content_email input{
     width: 280px;
 }
-/* .footer_feedback button{
-    font-size: 16px; 
-    padding: 4px 24px; 
-    border-radius: 10px;
-} */
 #feedback_submit{
     margin-top: -20px;
-    margin-left: 200px;   
+    margin-left: 50%;
 }
 #feedback_submit button{
     padding: 4px 12px;
 }
 #feedback_submit button:hover{
     background-color: orange;
+    cursor: pointer;
 }
 /*letter*/
 #letter{
