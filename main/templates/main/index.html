@@ -17,7 +17,7 @@
                 <li><a onclick="fnMove('popular')"><i class="fas fa-circle"></i>&nbsp;&nbsp;선배들의 취업정보&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
                 <li><a onclick="fnMove('issue')"><i class="fas fa-circle"></i>&nbsp;&nbsp;취업 준비가 처음일 때&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
                 <li><a onclick="fnMove('ready')"><i class="fas fa-circle"></i>&nbsp;&nbsp;나의 자소서가 불안하다면&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
-                <li><a onclick="fnMove('ready')"><i class="fas fa-circle"></i>&nbsp;&nbsp;면접에 대하여&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
+                <li><a onclick="fnMove('interview')"><i class="fas fa-circle"></i>&nbsp;&nbsp;면접에 대하여&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a></li>
             </ul>
         </div>
     </div>
@@ -410,7 +410,7 @@
     </div>
 </div>
 <!-- 면접에 대하여 -->
-<div class="content_interview" style="border: 5px solid gold;">
+<div class="content_interview">
     <div class="content_interview_title">면접에 필요한 과정</div>
     <div class="content_interview_subtitle">&nbsp;&nbsp;&nbsp;<i class="far fa-dot-circle"></i>&nbsp;동국대학교 관련 링크는 동국대학교 홈페이지 로그인 후 링크 재방문</div>
     <div class="content_interview_content">
@@ -431,39 +431,44 @@
             </a>
         </div>
         <div class="content_interview_content_contents">
-            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list4?menuid=001005004003" target="_blank">
+            <a href="https://www.youtube.com/watch?v=N_sSVyOCdXA" target="_blank">
+                <!-- <iframe src="https://www.youtube.com/embed/N_sSVyOCdXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="{% static 'images/dongguk.png' %}">
-                <p id="content_interview_content_contents_title">자기소개서 작성 TIP</p>
-                <p id="content_interview_content_contents_name">동국대학교</p>
-                <p id="content_interview_content_contents_exp">자기소개서 문항별 답변과 작성 TIP 제공</p>
+                <p id="content_interview_content_contents_title">1분 자기소개는 이렇게 해야 들린다!</p>
+                <p id="content_interview_content_contents_name">면접왕이형</p>
+                <p id="content_interview_content_contents_exp">면접시 1분 자기소개 말하기 방법에 대한 팁을 제공</p>
             </a>
         </div>
     </div>
     <div class="content_interview_content">
         <div class="content_interview_content_contents">
-            <a href = "https://ddp.dongguk.edu/site/educe/guestbook/list1?menuid=001005004002&searchselect=name_company&step1=i&step2=0&menuid=001005004002&currentpage=1" target="_blank">
+            <a href="https://www.youtube.com/watch?v=qAXAdqpKL6s" target="_blank">
+                <!-- <iframe src="https://www.youtube.com/embed/qAXAdqpKL6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="{% static 'images/dongguk.png' %}">
-                <p id="content_interview_content_contents_title">합격자 자소서 공유</p>
-                <p id="content_interview_content_contents_name">동국대학교(에듀스)</p>
-                <p id="content_interview_content_contents_exp">기업별 자소서 문항에 맞는 합격자의 자소서를 볼 수 있음</p>
+                <p id="content_interview_content_contents_title">준비 안하면 면접 광탈하는 질문 5개</p>
+                <p id="content_interview_content_contents_name">면접왕이형</p>
+                <p id="content_interview_content_contents_exp">면접 시 가장 많이 질문하는 중요한 질문 5개에 대한 설명, 예시, 팁을 제공</p>
             </a>
         </div>
         <div class="content_interview_content_contents">
-            <a href = "https://ddp.dongguk.edu/site/counsel/coal/jobReservlist?menuid=001004012&counseltype=9" target="_blank">
+            <a href="https://www.youtube.com/watch?v=AOwZ-iEXDko" target="_blank">
+                <!-- <iframe src="https://www.youtube.com/embed/AOwZ-iEXDko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="{% static 'images/dongguk.png' %}">
-                <p id="content_interview_content_contents_title">글쓰기 상담</p>
-                <p id="content_interview_content_contents_name">동국대학교</p>
-                <p id="content_interview_content_contents_exp">학교에서 제공하는 학업 관련 보고서와 에세이, 취업을 위한 자기소개서 상담 서비스</p>
+                <p id="content_interview_content_contents_title">면접 질문 유형만 알면 면접 준비가 쉬워집니다</p>
+                <p id="content_interview_content_contents_name">인싸담당자</p>
+                <p id="content_interview_content_contents_exp">면접 질문 유형에 대해 정리하고 설명. 대비하는 방법을 제시</p>
             </a>
         </div>
         <div class="content_interview_content_contents">
-            <a href = "https://brunch.co.kr/@kindoublej#articles" target="_blank">
+            <a href="https://www.youtube.com/watch?v=Qyk-h7e34uI" target="_blank">
+                <!-- <iframe src="https://www.youtube.com/embed/Qyk-h7e34uI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="{% static 'images/dongguk.png' %}">
-                <p id="content_interview_content_contents_title">하리하리</p>
-                <p id="content_interview_content_contents_name">브런치(블로그)</p>
-                <p id="content_interview_content_contents_exp">기업별 자소서 문항의 예시를 작성하여 샘플로 제공</p>
+                <p id="content_interview_content_contents_title">前 삼성 인성 면접관의 영상 모의면접</p>
+                <p id="content_interview_content_contents_name">취업사이다</p>
+                <p id="content_interview_content_contents_exp">전 삼성 면접관과 함께 따라하는 모의 면접 훈련 동영상</p>
             </a>
         </div>
     </div>
 </div>
+
 {% endblock %}
