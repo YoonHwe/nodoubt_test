@@ -56,3 +56,30 @@ class Like(models.Model):
 
     class Meta:
         unique_together =(('user', 'post'))
+
+# class Board(models.Model):
+#     id = models.AutoField(primary_key=True)
+#     title = models.CharField(max_length=100)
+#     writer = models.ForeignKey(User, on_delete=models.CASCADE)
+#     pub_date = models.DateTimeField()
+#     body = models.TextField()
+#     like_user_set_board = models.ManyToManyField(User, blank=True, related_name='likes_user_set_board', through='Like_board')
+
+#     @property
+#     def like_count(self):
+#         return self.like_user_set_board.count()
+
+#     def __str__(self):
+#         return self.title
+
+#     def summary(self):
+#         return self.body[:10]
+
+# class Like_board(models.Model):
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     post = models.ForeignKey(Board, on_delete=models.CASCADE)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     updated_at = models.DateTimeField(auto_now=True)
+
+#     class Meta:
+#         unique_together =(('user', 'post'))
