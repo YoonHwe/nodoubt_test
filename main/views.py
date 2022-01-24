@@ -1,5 +1,7 @@
+from csv import writer
+from xml.etree.ElementTree import Comment
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Data, Request, Feedback, Like
+from .models import Data, Request, Feedback, Like, Board, Comment_board
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
@@ -68,6 +70,71 @@ def request_create(request):
 def letter(request):
     return render(request, 'main/letter.html')
 
+def board(request):
+    boards = Board.objects.all()
+    return render(request, 'main/board.html', {'boards': boards})
+
+def board_new(request):
+    return render(request, 'main/board_new.html')
+
+def board_create(request):
+    new_board = Board()
+    new_board.title = request.POST['title']
+    new_board.writer = request.user
+    new_board.pub_date = timezone.now() 
+    new_board.body = request.POST['body']
+    new_board.image = request.FILES.get('image')
+    new_board.save()
+    return redirect('main:board_detail', new_board.id)
+
+def board_edit(request, id):
+    board_edit = Board.objects.get(id = id)
+    return render(request, 'main/board_edit.html', {'board': board_edit})
+
+def board_update(request, id):
+    board_update = Board.objects.get(id = id)
+    board_update.title = request.POST['title']
+    board_update.writer = request.user
+    board_update.pub_date = timezone.now() 
+    board_update.body = request.POST['body']
+    board_update.image = request.FILES.get('image')
+    board_update.save()
+    return redirect('main:board_detail', board_update.id)
+
+def board_detail(request, id):
+    board = get_object_or_404(Board, pk = id)
+    all_comments = board.board_comments.all().order_by('created_at')
+    return render(request, 'main/board_detail.html', {'board': board, 'comments': all_comments})
+
+def board_delete(request, id):
+    board_delete = Board.objects.get(id = id)
+    board_delete.delete()
+    return redirect ('main:board')
+
+def create_board_comment(request, board_id):
+    if request.method == "POST":
+        board = get_object_or_404(Board, pk=board_id)
+        current_user = request.user
+        comment_content = request.POST.get('content')
+        Comment_board.objects.create(content=comment_content, writer=current_user, board=board)
+    return redirect('main:board_detail', board_id)
+
+def edit_board_comment(request, board_comment_id):
+    edit_board_comment = Comment_board.objects.get(id = board_comment_id)
+    return render(request, 'main/board_comment_edit.html', {'board_comment': edit_board_comment})
+
+def update_board_comment(request, board_comment_id):
+    update_board_comment = get_object_or_404(Comment_board, pk = board_comment_id)
+    update_board_comment_writer = request.user
+    update_board_comment.content = request.POST['content']
+    update_board_comment.save()
+    return redirect('main:board_detail', update_board_comment.board.id)
+
+def delete_board_comment(request, board_comment_id):
+    delete_board_comment = get_object_or_404(Comment_board, pk = board_comment_id)
+    delete_board_comment.delete()
+    return redirect('main:board_detail', delete_board_comment.board.id)
+
 def feedback(request):
     return render(request, 'main/feedback.html')
 
@@ -100,4 +167,3 @@ def like_toggle(request, post_id):
     }
 
     return HttpResponse(json.dumps(context), content_type="application/json")
-

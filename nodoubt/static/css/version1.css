@@ -755,10 +755,6 @@ a{
 #feedback_submit button{
     padding: 4px 12px;
 }
-#feedback_submit button:hover{
-    background-color: orange;
-    cursor: pointer;
-}
 /*letter*/
 #letter{
     border: 1px solid black; 
@@ -801,6 +797,21 @@ a{
     padding: 30% 0%;
 }
 /*디테일 detail*/
+.loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#detail_head{
+    height: 100vh;
+}
 #detail_tail{
     margin-top: 80px;
     text-align: center;
@@ -814,6 +825,7 @@ a{
 #detail_tail_button:hover{
     background-color: orange;
 }
+
 #like-icon{
     color: red;
 }
@@ -929,3 +941,60 @@ a{
 .mypage_first_body_td{
     /* border-bottom: 2px solid orange; */
 }
+/* 게시판 */
+#board{
+    padding: 4% 12% 2% 12%;
+    background-color: rgba(155, 155, 155, 0.1);
+}
+#board_title{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#board_subtitle{
+    margin-top: -20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+}
+#board_table{
+    /* margin: 0 auto; */
+    width: 100%;
+    border-collapse: collapse;
+}
+.board_table_heads{
+    padding: 16px 4px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#board_table_body_content{
+    border-bottom: 1px solid gray;
+    padding: 10px 5px;
+}
+.board_table_bodies{
+    padding: 8px 4px;
+}
+#board_table_body_number{
+    /* width: 40px; */
+    text-align: center;
+}
+#board_table_body_title{
+    /* width: 200px; */
+}
+#board_table_body_writer{
+    /* width: 80px; */
+    text-align: center;
+}
+#board_table_body_pubdate{
+    /* width: 200px; */
+    text-align: center;
+}
+#board_table_body_like{
+    width: 60px;
+    text-align: center;
+}
+#board_table_body_content:hover{
+    background-color: orange;
+}
+#board_table_body_title a:hover{
+    text-decoration: underline;
+}
+
+/* 게시판 detail */

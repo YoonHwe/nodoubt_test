@@ -769,10 +769,6 @@ a{
 #feedback_submit button{
     padding: 4px 12px;
 }
-#feedback_submit button:hover{
-    background-color: orange;
-    cursor: pointer;
-}
 /*디테일 detail*/
 #detail_tail{
     margin-top: 80px;

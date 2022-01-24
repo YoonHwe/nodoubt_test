@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div style="border: 1px solid black;">
+	<h1>제목: {{board.title}}</h1>
+</div>
+
+<h3>작성자: {{board.writer}}</h4>
+<h3>날짜: {{board.pub_date}}</h4>
+<h6>내용: {{board.body}}</h6>
+{% if board.image %}
+<img src="{{board.image.url}}" alt="사진">
+{% endif %}
+<a href="{% url 'main:board_edit' board.id %}">글 수정하기</a>
+<a href="{% url 'main:board_delete' board.id %}">글 삭제하기</a>
+<a href="{% url 'main:board' %}" style="border: 1px solid green;">게시판으로 돌아가기</a>
+
+<h1>댓글목록</h1>
+{% for comment in comments %}
+<div style="border: 3px solid skyblue;">
+    <p>작성자: {{comment.writer}}</p>
+    <p>내용: {{comment.content}}</p>
+</div>
+{% if user == comment.writer %}
+<div>
+    <a href="{% url 'main:edit_board_comment' comment.id %}">수정하기</a>
+    <a href="{% url 'main:delete_board_comment' comment.id %}">삭제하기</a>
+</div>
+{% endif %}
+{% endfor %}
+
+{% if user.is_authenticated %}
+<div style="border: 3px solid black;">
+	<form action="{%url 'main:create_board_comment' board.id%}" method="POST">
+		{%csrf_token%}
+		<textarea name="content" placeholder="댓글내용입력"></textarea>
+		<input type="submit" value="확인">
+	</form>
+</div>
+{% else %}
+<p>로그인 후 댓글 작성 가능</p>
+{% endif %}
+
+
+{% endblock %}

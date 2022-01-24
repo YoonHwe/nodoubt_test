@@ -787,10 +787,6 @@ a{
     padding: 4px 12px;
     display: none;
 }
-#feedback_submit button:hover{
-    background-color: orange;
-    cursor: pointer;
-}
 /*letter*/
 #letter{
     border: 1px solid black; 
