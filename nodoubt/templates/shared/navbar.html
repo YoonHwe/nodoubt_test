@@ -10,7 +10,7 @@
                 {% if user.is_authenticated %}
                 <a href="{% url 'users:mypage' %}">{{user.last_name}}{{user.first_name}} 님</a>
                 <a href="{% url 'account_logout' %}">로그아웃</a>
-                <a class="dropdown-content_mypage" href="">내 컨텐츠</a>
+                <a class="dropdown-content_mypage" href="{% url 'main:career' %}">내 컨텐츠</a>
                 <a class="dropdown-content_mypage" href="{% url 'main:board' %}">자유게시판</a>
                 {% else %}
                 <a href="{% url 'account_login' %}">로그인</a>

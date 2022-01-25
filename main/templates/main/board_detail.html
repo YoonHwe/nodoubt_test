@@ -2,16 +2,18 @@
 {% load static %}
 {% block content %}
 
-<div style="border: 1px solid black;">
-	<h1>제목: {{board.title}}</h1>
+<div id="board_detail" style="border: 1px solid black;">
+	<h1 id="board_detail_title">{{board.title}}</h1>
+	<h3 id="board_detail_writer">작성자: {{board.writer}}</h3>
+	<h3 id="board_detail_pubdate">날짜: {{board.pub_date}}</h4>
+	<h6 id="board_detail_body">내용: {{board.body}}</h6>
+	{% if board.image %}
+		<img id="board_detail_image" src="{{board.image.url}}" alt="사진">
+	{% endif %}
 </div>
 
-<h3>작성자: {{board.writer}}</h4>
-<h3>날짜: {{board.pub_date}}</h4>
-<h6>내용: {{board.body}}</h6>
-{% if board.image %}
-<img src="{{board.image.url}}" alt="사진">
-{% endif %}
+
+
 <a href="{% url 'main:board_edit' board.id %}">글 수정하기</a>
 <a href="{% url 'main:board_delete' board.id %}">글 삭제하기</a>
 <a href="{% url 'main:board' %}" style="border: 1px solid green;">게시판으로 돌아가기</a>

@@ -998,3 +998,128 @@ a{
 }
 
 /* 게시판 detail */
+#board_detail{
+    padding: 4% 12% 2% 12%;
+    border: 3px solid gold;
+}
+#board_detail_title{
+    padding: 16px 4px;
+    border: 1px solid red;
+}
+
+/* 직무 샘플 */
+#body_div{
+    background-color: rgba(130, 168, 212, 0.1);
+    width: 600px;
+    margin: 0 auto;
+    padding: 12px 20px 0px 20px;
+}
+#company_name{
+    font-size: 55px;
+    text-align: center;
+    font-family: 'Monoton', sans-serif;
+}
+#company_name a{
+    text-decoration: none;
+    color: black;
+}
+.oneline_notify{
+    padding: 0px 0px 20px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.notify h2{
+    padding-top: 20px;
+}
+.notify h3{
+    padding-left: 30px;
+    font-weight: 400;
+}
+.sample_title{
+    padding: 12px 50px 0px 50px;
+}
+#sample_title_first{
+    opacity: .7;
+}
+#sample_title_second{
+    color: orange;
+}
+.sample{
+    padding-bottom: 40px;
+}
+.sample_content{
+    width: 440px;
+    background-color: white;
+    padding: 30px;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+#sample_content_title{
+    text-align: center;
+    font-size: 32px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    text-decoration: underline;
+}
+.sample_content_private, .sample_content_language, .sample_content_certificate, .sample_content_activity_in, .sample_content_activity_out, .sample_content_career{
+    padding-bottom: 15px;
+}
+.sample_content_private_content, .sample_content_language_content, .sample_content_certificate_content, .sample_content_activity_in_content, .sample_content_activity_out_content, .sample_content_career_content{
+    padding-left: 20px;
+}
+.summary{
+    padding-bottom: 20px;
+}
+.summary_title h1{
+    color: orange;
+}
+.summary_content_question p{
+    padding: 4px 20px;
+}
+.summary_content_exp{
+    width: 480px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+.summary_content_exp h2{
+    text-decoration: underline;
+}
+.summary_content_exp h3{
+    padding: 0px 10px;
+}
+.summary_content_exp_sample{
+    padding: 0px 20px;
+}
+.summary_content_exp_sample p{
+    padding: 4px 0px;
+}
+.summary_content_answer h2{
+}
+.summary_content_answer p{
+    padding: 0px 20px;
+}
+#body_div strong{
+    color: orange;
+}
+.end_ment{
+    border-top: 1px solid gray;
+    padding: 0px 40px 30px 40px;
+    text-align: center;
+}
+.end_ment h5{
+    text-align: start;
+}
+.end_ment a{
+    text-decoration: none;
+    color: black;
+}
+#end_ment_btn{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 10px;
+}
+#end_ment_btn:hover{
+    opacity: .5;
+}

@@ -28,5 +28,7 @@ urlpatterns = [
     path('<str:board_comment_id>/delete_board_comment',delete_board_comment,name='delete_board_comment'),
     path('feedback_create/',views.feedback_create, name="feedback_create"),
     path('like_toggle/<int:post_id>/', views.like_toggle, name="like_toggle"),
+    path('career/',views.career, name="career"),
+    path('sample/',views.sample, name="sample"),
 ]
     

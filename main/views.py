@@ -148,6 +148,12 @@ def feedback_create(request):
     new_feedback.save()
     return redirect('main:showmain') 
 
+def career(request):
+    return render(request, 'main/career.html')
+
+def sample(request):
+    return render(request, 'sample/sample.html')
+
 @login_required
 @require_POST
 

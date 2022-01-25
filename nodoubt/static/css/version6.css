@@ -835,10 +835,13 @@ a{
     text-align: center;
 }
 #detail_tail_title{   
-    font-size: 28px;
+    font-size: 24px;
+}
+#detail_tail span{
+    font-size: 12px;
 }
 #detail_tail_button{
-    padding: 12px; 
+    padding: 4px 8px; 
     border-radius: 10px;
 }
 #detail_tail_button:hover{
@@ -968,4 +971,138 @@ a{
 }
 .mypage_name{
     display: none;
+}
+/* 직무 샘플 */
+#body_div{
+    background-color: rgba(130, 168, 212, 0.1);
+    width: 340px;
+    margin: 0 auto;
+    padding: 6px 10px 0px 10px;
+}
+#company_name{
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Monoton', sans-serif;
+}
+#company_name a{
+    text-decoration: none;
+    color: black;
+}
+.oneline_notify{
+    padding: 0px 0px 10px 0px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.notify h2{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.notify h3{
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 14px;
+}
+.sample_title{
+    padding: 6px 36px 0px 36px;
+}
+#sample_title_first{
+    opacity: .7;
+    font-size: 14px;
+}
+#sample_title_second{
+    color: orange;
+    font-size: 18px;
+}
+.sample{
+    padding-bottom: 32px;
+}
+.sample_content{
+    width: 280px;
+    background-color: white;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+#sample_content_title{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 0px;
+    text-decoration: underline;
+}
+.sample_content_private, .sample_content_language, .sample_content_certificate, .sample_content_activity_in, .sample_content_activity_out, .sample_content_career{
+    padding-bottom: 8px;
+}
+.sample_content_private h2, .sample_content_language h2, .sample_content_certificate h2, .sample_content_activity_in h2, .sample_content_activity_out h2, .sample_content_career h2{
+    font-size: 18px;
+}
+.sample_content_private_content, .sample_content_language_content, .sample_content_certificate_content, .sample_content_activity_in_content, .sample_content_activity_out_content, .sample_content_career_content{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.summary{
+    padding-bottom: 6px;
+}
+.summary_title h1{
+    color: orange;
+    font-size: 20px;
+}
+.summary_content_question h2{
+    font-size: 18px;
+}
+.summary_content_question p{
+    padding: 2px 10px;
+    font-size: 14px;
+}
+.summary_content_exp{
+    width: 280px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+.summary_content_exp h2{
+    text-decoration: underline;
+    font-size: 18px;
+}
+.summary_content_exp h3{
+    padding: 0px 6px;
+    font-size: 14px;
+}
+.summary_content_exp_sample{
+    padding: 0px 10px;
+}
+.summary_content_exp_sample p{
+    padding: 2px 0px;
+    font-size: 14px;
+}
+.summary_content_answer h2{
+    font-size: 18px;
+}
+.summary_content_answer p{
+    padding: 0px 10px;
+    font-size: 14px;
+}
+#body_div strong{
+    color: orange;
+}
+.end_ment{
+    border-top: 1px solid gray;
+    padding: 0px 26px 18px 26px;
+    text-align: center;
+}
+.end_ment h5{
+    text-align: start;
+}
+.end_ment a{
+    text-decoration: none;
+    color: black;
+}
+#end_ment_btn{
+    width: 160px;
+    height: 32px;
+    background-color: orange;
+    border-radius: 10px;
+}
+#end_ment_btn:hover{
+    opacity: .5;
 }
