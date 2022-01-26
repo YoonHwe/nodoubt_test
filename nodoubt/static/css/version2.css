@@ -160,6 +160,7 @@ a{
     flex-direction: column; 
     justify-content: center;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 .content_second_upper_right p{
     font-size: 24px;
@@ -187,6 +188,7 @@ a{
 #modal_btn{
     text-decoration: underline;
     text-underline-position: under;
+    color: orange;
 }
 #modal_btn:hover{
     opacity: .3;
@@ -602,6 +604,7 @@ a{
     width: 24vw;
     text-align: center;
     position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
 .content_ready_content_contents:hover{
     border: 1px solid orange;
@@ -663,6 +666,7 @@ a{
     width: 24vw;
     text-align: center;
     position: relative;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
 .content_interview_content_contents:hover{
     border: 1px solid orange;
@@ -771,7 +775,7 @@ a{
 }
 /*디테일 detail*/
 #detail_tail{
-    margin-top: 80px;
+    margin-top: 60px;
     text-align: center;
 }
 #detail_tail_title{   

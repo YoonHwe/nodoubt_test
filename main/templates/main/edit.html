@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block content %}
-<div>
+<!-- 선배들의 취업 정보 수정하기 -->
+<!-- <div>
 	<h1>글 작성하기</h1>
-	
 	<form action = "{% url 'main:update' data.id %}" method = "post" enctype="multipart/form-data">
     	{% csrf_token %}
     	<p>회사: <input type="text" name="company" value="{{data.company}}"></p>
@@ -14,6 +13,5 @@
     	<p>내용: <input type="text" name="body" id="" cols="30" rows="10" value="{{data.body}}"></p>
     	<button type="submit">제출</button>
 	</form>
-</div>
-
+</div> -->
 {% endblock %}
