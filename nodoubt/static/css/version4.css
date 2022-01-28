@@ -4,11 +4,11 @@ html{
 body{
     margin: 0;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
+
 /* menu / navbar */
 .menu{
     display: flex;
@@ -23,20 +23,6 @@ a{
     font-size: 30px;
     font-family: 'Monoton', sans-serif;
     width: 170px;
-}
-.menu_content{
-    display: flex;
-    margin-left: 10%;
-    font-size: 16px;
-}
-.menu_content_page{
-    font-family: 'Roboto', sans-serif;
-    margin: 0 10px;
-    width: 44px;
-}
-.menu_content_page a:hover{
-    color: orange;
-    cursor: pointer;
 }
 .menu_right{
     width: 170px;
@@ -53,9 +39,6 @@ a{
 .dropdown_left{
     margin-left: 40%;
 }
-.fa-folder-plus, .fa-user{
-    font-size: 20px;
-}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -67,7 +50,6 @@ a{
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .dropdown-content a {
     color: black;
     text-decoration: none;
@@ -75,13 +57,13 @@ a{
     padding: 4px 8px;
     border-radius: 10px;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 .dropdown:hover .dropbtn{
     color: orange;
 }
+
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
@@ -102,9 +84,6 @@ a{
 }
 .content_first_left_upper p:last-child{
     margin-top: -24px;
-}
-.content_first_left_lower{
-    /* border: 1px solid black; */
 }
 .content_first_left_lower_label{
     font-size: 14px;
@@ -129,7 +108,6 @@ a{
     cursor: pointer;
     color: orange;
     font-weight: bold;
-
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 14px;
@@ -137,6 +115,7 @@ a{
 .content_first_right{
     width: 20%;
 }
+
 /* 두번째 칸 - 인스트럭션 + 지원서 */
 .content_second{ 
     padding: 4% 8% 2% 8%;
@@ -177,7 +156,7 @@ a{
     width: 100%; 
     height: 100%; 
     background-color:rgba(0, 0,0, 0.5); 
-    top:0; 
+    top: 0; 
     left: 0; 
     z-index: 1;
 }
@@ -287,7 +266,6 @@ a{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    /* padding-left: 10px; */
 }
 .underline{
     border-left-width: 0;
@@ -325,10 +303,10 @@ a{
     font-weight: bold;
     margin-bottom: 2%;
 }
+
 /* 취업 정보 컨텐츠 */
 .content_popular{
     padding: 0% 8%;
-    /* background-color: rgba(130, 168, 212, 0.1); */
 }
 .content_popular_title{
     font-size: 28px;
@@ -392,51 +370,8 @@ a{
     font-size: 16px; 
     margin: 20px 0px 20px 28px; 
 }
-#content_issue_first{
-    /* display: flex;
-    justify-content: center; */
-}
 .content_issue_first{
     display: none;
-}
-#content_issue_video{
-    /* border: 1px solid black;
-    margin: 0px 6px;  */
-}
-#content_issue_video_iframe{
-    /* width: 24vw; 
-    height: 16vw;  */
-}
-#content_issue_video_title{
-    /* font-size: 14px; 
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_video_subtitle{
-    /* font-size: 10px; 
-    font-weight: 500;
-    text-align: center;
-    margin-top: -6px; */
-}
-.controls{
-    /* text-align: end; */
-}
-.controls span{
-    /* background-color: #333;
-    color: white;
-    border-radius: 10%; 
-	padding: 4px 12px; 
-	margin: 0px 3px; 
-    font-size: 10px; */
-}
-.controls span:hover{
-    /* cursor: pointer; */
-}
-.prev:hover{
-    /* background-color: orange; */
-}
-.next:hover{
-    /* background-color: orange; */
 }
 #content_issue_tablet_first{
     display: flex;
@@ -481,51 +416,8 @@ a{
 #tablet_next:hover{
     background-color: orange;
 }
-
 .content_issue_mobile{
     display: none;
-}
-#content_issue_mobile_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_mobile_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; */
-}
-#content_issue_mobile_video_iframe{
-    /* width: 36vw;
-    height: 24vw; */
-}
-#content_issue_mobile_video_title{
-    /* font-size: 16px;
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_mobile_video_subtitle{
-    /* font-size: 12px;
-    font-weight: 500;
-    text-align: center; */
-}
-#mobile_controls{
-    /* text-align: end; */
-}
-#mobile_controls span{
-    /* background-color: #333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10%;
-	padding: 4px 12px;
-	margin: 0 4px; */
-}
-#mobile_controls span:hover{
-    /* cursor: pointer; */
-}
-#mobile_prev:hover{
-    /* background-color: orange; */
-}
-#mobile_next:hover{
-    /* background-color: orange; */
 }
 .content_issue_second_title{
     margin: 40px 0px 20px 0px; 
@@ -587,10 +479,11 @@ a{
     opacity: 0.7;
     margin: -10px 0px 0px 10px;
 }
+
 /* 자소서 / 면접 */
 .content_ready{
     padding: 0% 8%;
-    padding-top: 40px; 
+    padding-top: 20px; 
     background-color: rgba(130, 168, 212, 0.1);
 }
 .content_ready_title{
@@ -652,8 +545,8 @@ a{
 
 .content_interview{
     padding: 0% 8%;
-    padding-top: 40px; 
-    padding-bottom: 20px;
+    padding-top: 10px; 
+    padding-bottom: 30px;
     background-color: rgba(130, 168, 212, 0.1);
 }
 .content_interview_title{
@@ -716,7 +609,8 @@ a{
 .content_interview_content_contents:hover #content_interview_content_contents_name{
     visibility: hidden;
 }
-/**/
+
+/* footer */
 .footer{
     margin: 0% 4%;
     padding: 2% 4%; 
@@ -726,7 +620,7 @@ a{
     border-top: 3px solid black;
 }
 .footer_letter{
-    width: 50%;
+    width: 60%;
     font-size: 24px;
     height: 100px;
 }
@@ -734,16 +628,13 @@ a{
     font-family: 'Monoton', sans-serif;
 }
 #footer_title{
-    font-size: 16px;
+    font-size: 24px;
 }
 #footer_content{
     display: none;
-    /* font-size: 12px;
-    border: 1px solid black;
-    margin-top: -8px; */
 }
 .footer_feedback{
-    width: 50%; 
+    width: 40%; 
     font-size: 16px;
     text-align: center;
     height: 100px;
@@ -755,18 +646,15 @@ a{
 }
 #footer_feedback_caution{
     display: none;
-    /* font-size: 16px; */
     text-align: center;
     font-weight: 200;
 }
-#footer_feedback_link{
-    /* display: none; */
-}
 #footer_feedback_link_anchor{
-    border: 1px solid orange;
+    border: 1px solid black;
     padding: 4px 8px;
     font-size: 16px;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
 #footer_feedback_link_anchor:hover{
     background-color: orange;
@@ -792,7 +680,8 @@ a{
     padding: 4px 12px;
     display: none;
 }
-/*letter*/
+
+/* letter */
 #letter{
     border: 1px solid black; 
     margin: 40px auto; 
@@ -806,7 +695,8 @@ a{
     display: flex;
     justify-content: center;
 }
-/*feedback*/
+
+/* feedback */
 #feedback{
     border: 1px solid black; 
     width: 440px; 
@@ -833,12 +723,26 @@ a{
     text-align: center;
     padding: 30% 0%;
 }
-/*디테일 detail*/
+
+/* 디테일 detail */
+.loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#detail_head{
+    height: 100vh;
+}
 #detail_tail{
     margin-top: 60px;
     text-align: center;
-}
-#detail_tail_title{   
 }
 #detail_tail_button{
     padding: 12px; 

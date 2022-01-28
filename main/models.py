@@ -23,8 +23,7 @@ class Data(models.Model):
 class Request(models.Model):
     EMPLOY_TYPE_CHOICES = {
         ('정규', '정규'),
-        ('인턴', '인턴'),
-        ('IPP', 'IPP')
+        ('인턴', '인턴')
     }
     id = models.AutoField(primary_key=True)
     employ_type = models.CharField(max_length=20, choices=EMPLOY_TYPE_CHOICES)

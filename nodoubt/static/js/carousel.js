@@ -53,192 +53,108 @@ nextButtonTablet.addEventListener("click", goNextTablet);
 prevButtonMobile.addEventListener("click", goPrevMobile);
 nextButtonMobile.addEventListener("click", goNextMobile);
 
+function clearCheckPage(){
+    prevButton.style.visibility = "visible";
+    nextButton.style.visibility = "visible";
+    contentIssueFirst.style.display = "none";
+    contentIssueSecond.style.display = "none";
+    contentIssueThird.style.display = "none";
+}
+function clearCheckPageTablet(){
+    prevButtonTablet.style.visibility = "visible";
+    nextButtonTablet.style.visibility = "visible";
+    contentIssueFirstTablet.style.display = "none";
+    contentIssueSecondTablet.style.display = "none";
+    contentIssueThirdTablet.style.display = "none";
+    contentIssueFourthTablet.style.display = "none";
+    contentIssueFifthTablet.style.display = "none";
+}
+function clearCheckPageMobile(){
+    prevButtonMobile.style.visibility = "visible";
+    nextButtonMobile.style.visibility = "visible";
+    contentIssueFirstMobile.style.display = "none";
+    contentIssueSecondMobile.style.display = "none";
+    contentIssueThirdMobile.style.display = "none";
+    contentIssueFourthMobile.style.display = "none";
+    contentIssueFifthMobile.style.display = "none";
+    contentIssueSixthMobile.style.display = "none";
+    contentIssueSeventhMobile.style.display = "none";
+    contentIssueEighthMobile.style.display = "none";
+    contentIssueNinthMobile.style.display = "none";
+}
 function checkPage(){
-    if(currentPage === 1){
-        prevButton.style.visibility = "hidden";
-        contentIssueFirst.style.display = "flex"
-        contentIssueSecond.style.display = "none";
-        contentIssueThird.style.display = "none"
-    }
-    if(currentPage === 2){
-        prevButton.style.visibility = "visible";
-        nextButton.style.visibility = "visible";
-        contentIssueFirst.style.display = "none"
-        contentIssueSecond.style.display = "flex";
-        contentIssueThird.style.display = "none"
-    }
-    if(currentPage === 3){
-        nextButton.style.visibility = "hidden";
-        contentIssueFirst.style.display = "none"
-        contentIssueSecond.style.display = "none";
-        contentIssueThird.style.display = "flex"
+    clearCheckPage();
+    switch(currentPage){
+        case 1:
+            prevButton.style.visibility = "hidden";
+            contentIssueFirst.style.display = "flex";
+            break;
+        case 2:
+            contentIssueSecond.style.display = "flex";
+            break;
+        case 3:
+            nextButton.style.visibility = "hidden";
+            contentIssueThird.style.display = "flex";
+            break;
     }
 }
 
 function checkPageTablet(){
-    if(currentPageTablet === 1){
-        prevButtonTablet.style.visibility = "hidden";
-        contentIssueFirstTablet.style.display = "flex"
-        contentIssueSecondTablet.style.display = "none";
-        contentIssueThirdTablet.style.display = "none"
-        contentIssueFourthTablet.style.display = "none"
-        contentIssueFifthTablet.style.display = "none"
-    }
-    if(currentPageTablet === 2){
-        prevButtonTablet.style.visibility = "visible";
-        nextButtonTablet.style.visibility = "visible";
-        contentIssueFirstTablet.style.display = "none"
-        contentIssueSecondTablet.style.display = "flex";
-        contentIssueThirdTablet.style.display = "none"
-        contentIssueFourthTablet.style.display = "none"
-        contentIssueFifthTablet.style.display = "none"
-    }
-    if(currentPageTablet === 3){
-        prevButtonTablet.style.visibility = "visible";
-        nextButtonTablet.style.visibility = "visible";
-        contentIssueFirstTablet.style.display = "none"
-        contentIssueSecondTablet.style.display = "none";
-        contentIssueThirdTablet.style.display = "flex"
-        contentIssueFourthTablet.style.display = "none"
-        contentIssueFifthTablet.style.display = "none"
-    }
-    if(currentPageTablet === 4){
-        prevButtonTablet.style.visibility = "visible";
-        nextButtonTablet.style.visibility = "visible";
-        contentIssueFirstTablet.style.display = "none"
-        contentIssueSecondTablet.style.display = "none";
-        contentIssueThirdTablet.style.display = "none"
-        contentIssueFourthTablet.style.display = "flex"
-        contentIssueFifthTablet.style.display = "none"
-    }
-    if(currentPageTablet === 5){
-        prevButtonTablet.style.visibility = "visible";
-        nextButtonTablet.style.visibility = "visible";
-        contentIssueFirstTablet.style.display = "none"
-        contentIssueSecondTablet.style.display = "none";
-        contentIssueThirdTablet.style.display = "none"
-        contentIssueFourthTablet.style.display = "none"
-        contentIssueFifthTablet.style.display = "flex"
-    }
+    clearCheckPageTablet();
+    switch(currentPageTablet){
+        case 1:
+            prevButtonTablet.style.visibility = "hidden";
+            contentIssueFirstTablet.style.display = "flex";
+            break;
+        case 2:
+            contentIssueSecondTablet.style.display = "flex";
+            break;
+        case 3:
+            contentIssueThirdTablet.style.display = "flex";
+            break;
+        case 4:
+            contentIssueFourthTablet.style.display = "flex";
+            break;
+        case 5:
+            nextButtonTablet.style.visibility = "hidden";
+            contentIssueFifthTablet.style.display = "flex";
+            break;
+        }
 }
 
 function checkPageMobile(){
-    if(currentPageMobile === 1){
-        prevButtonMobile.style.visibility = "hidden";
-        contentIssueFirstMobile.style.display = "flex"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 2){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "flex";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 3){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "flex"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 4){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "flex"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 5){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "flex"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 6){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "flex"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 7){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "flex"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 8){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "visible";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "flex"
-        contentIssueNinthMobile.style.display = "none"
-    }
-    if(currentPageMobile === 9){
-        prevButtonMobile.style.visibility = "visible";
-        nextButtonMobile.style.visibility = "hidden";
-        contentIssueFirstMobile.style.display = "none"
-        contentIssueSecondMobile.style.display = "none";
-        contentIssueThirdMobile.style.display = "none"
-        contentIssueFourthMobile.style.display = "none"
-        contentIssueFifthMobile.style.display = "none"
-        contentIssueSixthMobile.style.display = "none"
-        contentIssueSeventhMobile.style.display = "none"
-        contentIssueEighthMobile.style.display = "none"
-        contentIssueNinthMobile.style.display = "flex"
-    }
+    clearCheckPageMobile();
+    switch(currentPageMobile){
+        case 1:
+            prevButtonMobile.style.visibility = "hidden";
+            contentIssueFirstMobile.style.display = "flex";
+            break;
+        case 2:
+            contentIssueSecondMobile.style.display = "flex";
+            break;
+        case 3:
+            contentIssueThirdMobile.style.display = "flex";
+            break;
+        case 4:
+            contentIssueFourthMobile.style.display = "flex";
+            break;
+        case 5:
+            contentIssueFifthMobile.style.display = "flex";
+            break;
+        case 6:
+            contentIssueSixthMobile.style.display = "flex";
+            break;
+        case 7:
+            contentIssueSeventhMobile.style.display = "flex";
+            break;
+        case 8:
+            contentIssueEighthMobile.style.display = "flex";
+            break;
+        case 9:
+            nextButtonMobile.style.visibility = "hidden";
+            contentIssueNinthMobile.style.display = "flex";
+            break;
+        }
 }
 
 function goPrev(){

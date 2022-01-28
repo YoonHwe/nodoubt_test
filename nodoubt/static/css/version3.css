@@ -9,6 +9,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 /* menu / navbar */
 .menu{
     display: flex;
@@ -24,37 +25,20 @@ a{
     font-family: 'Monoton', sans-serif;
     width: 170px;
 }
-.menu_content{
-    display: flex;
-    margin-left: 10%;
-    font-size: 16px;
-}
-.menu_content_page{
-    font-family: 'Roboto', sans-serif;
-    margin: 0 10px;
-    width: 44px;
-}
-.menu_content_page a:hover{
-    color: orange;
-    cursor: pointer;
-}
 .menu_right{
     width: 170px;
     display: flex;
 }
-.dropbtn {
+.dropbtn{
     padding: 16px;
     font-size: 16px;
 }
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
 }
 .dropdown_left{
     margin-left: 40%;
-}
-.fa-folder-plus, .fa-user{
-    font-size: 20px;
 }
 .dropdown-content {
     display: none;
@@ -128,7 +112,6 @@ a{
     cursor: pointer;
     color: orange;
     font-weight: bold;
-
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 16px;
@@ -392,52 +375,8 @@ a{
     font-size: 18px; 
     margin: 20px 0px 20px 28px; 
 }
-#content_issue_first{
-    /* display: flex;
-    justify-content: center; */
-}
 .content_issue_first{
     display: none;
-}
-#content_issue_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-}
-#content_issue_video_iframe{
-    /* width: 24vw; 
-    height: 16vw;  */
-}
-#content_issue_video_title{
-    /* font-size: 16px; 
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_video_subtitle{
-    /* font-size: 12px; 
-    font-weight: 500;
-    text-align: center;
-    margin-top: -4px; */
-}
-.controls{
-    /* text-align: end; */
-}
-.controls span{
-    /* background-color: #333;
-    color: white;
-    border-radius: 10%; 
-	padding: 6px 14px; 
-	margin: 0px 4px; 
-    font-size: 12px; */
-}
-.controls span:hover{
-    /* cursor: pointer; */
-}
-.prev:hover{
-    /* background-color: orange; */
-}
-.next:hover{
-    /* background-color: orange; */
 }
 #content_issue_tablet_first{
     display: flex;
@@ -463,6 +402,7 @@ a{
     text-align: center;
 }
 #tablet_controls{
+    margin-top: 28px;
     text-align: end;
 }
 #tablet_controls span{
@@ -483,52 +423,8 @@ a{
 #tablet_next:hover{
     background-color: orange;
 }
-
 .content_issue_mobile{
     display: none;
-}
-#content_issue_mobile_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_mobile_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /
-}
-#content_issue_mobile_video_iframe{
-    /* width: 36vw;
-    height: 24vw; */
-}
-#content_issue_mobile_video_title{
-    /* font-size: 16px;
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_mobile_video_subtitle{
-    /* font-size: 12px;
-    font-weight: 500;
-    text-align: center; */
-}
-#mobile_controls{
-    /* text-align: end; */
-}
-#mobile_controls span{
-    /* background-color: #333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10%;
-	padding: 6px 14px;
-	margin: 0 4px; */
-}
-#mobile_controls span:hover{
-    /* cursor: pointer; */
-}
-#mobile_prev:hover{
-    /* background-color: orange; */
-}
-#mobile_next:hover{
-    /* background-color: orange; */
 }
 .content_issue_second_title{
     margin: 50px 0px 20px 0px; 
@@ -590,6 +486,7 @@ a{
     opacity: 0.7;
     margin: -10px 0px 0px 10px;
 }
+
 /* 자소서 / 면접 */
 .content_ready{
     padding: 0% 10%;
@@ -655,8 +552,8 @@ a{
 
 .content_interview{
     padding: 0% 10%;
-    padding-top: 40px; 
-    padding-bottom: 20px;
+    padding-top: 20px; 
+    padding-bottom: 40px;
     background-color: rgba(130, 168, 212, 0.1);
 }
 .content_interview_title{
@@ -718,7 +615,8 @@ a{
 .content_interview_content_contents:hover #content_interview_content_contents_name{
     visibility: hidden;
 }
-/**/
+
+/* footer */
 .footer{
     margin: 0% 4%;
     padding: 2% 6%; 
@@ -740,9 +638,6 @@ a{
 }
 #footer_content{
     display: none;
-    /* font-size: 12px;
-    border: 1px solid black;
-    margin-top: -8px; */
 }
 .footer_feedback{
     width: 50%; 
@@ -757,12 +652,8 @@ a{
 }
 #footer_feedback_caution{
     display: none;
-    /* font-size: 16px; */
     text-align: center;
     font-weight: 200;
-}
-#footer_feedback_link{
-    /* display: none; */
 }
 #footer_feedback_link_anchor{
     border: 1px solid orange;
@@ -793,7 +684,8 @@ a{
     padding: 4px 12px;
     display: none;
 }
-/*feedback*/
+
+/* feedback */
 #feedback{
     border: 1px solid black; 
     width: 440px; 
@@ -820,12 +712,26 @@ a{
     text-align: center;
     padding: 30% 0%;
 }
-/*디테일 detail*/
+
+/* 디테일 detail */
+.loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#detail_head{
+    height: 100vh;
+}
 #detail_tail{
     margin-top: 60px;
     text-align: center;
-}
-#detail_tail_title{   
 }
 #detail_tail_button{
     padding: 12px; 
@@ -851,7 +757,8 @@ a{
     border-radius: 10px;
     font-weight: bold;
 }
-/*로그인*/
+
+/* 로그인 */
 .login{
     text-align: center;
     background-color: rgba(130, 168, 212, 0.1);
@@ -897,7 +804,8 @@ a{
 .fa-google_icon_exp{
     margin-top: -7px;
 }
-/*로그아웃*/
+
+/* 로그아웃 */
 .logout{
     text-align: center;
     padding: 60px 0px;
@@ -920,6 +828,7 @@ a{
 .logout_button:hover{
     opacity: .5;
 }
+
 /* 회원가입 */
 .signup_onlygoogle{
     margin: 30px 0px;
@@ -927,7 +836,8 @@ a{
     animation: goOpacityUp 2s ease-in-out;
     font-size: 20px;
 }
-/*마이페이지*/
+
+/* 마이페이지 */
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
     padding: 80px;
@@ -947,9 +857,7 @@ a{
 .mypage_first_head_th{
     border: 2px solid orange;
 }
-.mypage_first_body_td{
-    /* border-bottom: 2px solid orange; */
-}
+
 /* 직무 샘플 */
 #body_div{
     background-color: rgba(130, 168, 212, 0.1);
@@ -1036,8 +944,6 @@ a{
 }
 .summary_content_exp_sample p{
     padding: 4px 0px;
-}
-.summary_content_answer h2{
 }
 .summary_content_answer p{
     padding: 0px 20px;

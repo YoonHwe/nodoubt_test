@@ -4,11 +4,11 @@ html{
 body{
     margin: 0;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
+
 /* menu / navbar */
 .menu{
     display: flex;
@@ -16,33 +16,30 @@ a{
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 12%;
+    padding: 0% 12%; /**/
     margin: 0% 4%;
 }
 .menu_company{
-    font-size: 36px;
+    font-size: 36px; /**/
     font-family: 'Monoton', sans-serif;
     width: 170px;
 }
 .menu_right{
-    width: 170px;
     display: flex;
+    width: 170px;
 }
-.dropbtn {
+.dropbtn{
     padding: 16px;
     font-size: 16px;
 }
-.dropdown {
+.dropdown{
     position: relative;
     display: inline-block;
 }
 .dropdown_left{
     margin-left: 40%;
 }
-.fa-folder-plus, .fa-user{
-    font-size: 20px;
-}
-.dropdown-content {
+.dropdown-content{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -66,10 +63,11 @@ a{
 .dropdown:hover .dropbtn{
     color: orange;
 }
+
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
-    padding: 4% 12% 2% 12%;
+    padding: 4% 12% 2% 12%; /**/
     background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
@@ -78,24 +76,24 @@ a{
     background-repeat: no-repeat;
 }
 .content_first_left{
-    width: 50%;
+    width: 50%; /**/
     padding-bottom: 40px;
 }
 .content_first_left_upper{
-    font-size: 32px;
+    font-size: 32px; /**/
     font-weight: bold;
 }
 .content_first_left_upper p:last-child{
-    margin-top: -32px;
+    margin-top: -32px; /**/
 }
 .content_first_left_lower{
     /* border: 1px solid black; */
 }
 .content_first_left_lower_label{
-    font-size: 20px;
+    font-size: 20px; /**/
 }
 .content_first_left_lower_option{
-    margin-top: 10px;
+    margin-top: 10px; /**/
 }
 .content_first_left_lower_option li{
     opacity: .5;
@@ -400,6 +398,7 @@ a{
     text-align: center;
 }
 .controls{
+    margin-top: 40px;
     text-align: end;
 }
 .controls span{
@@ -696,22 +695,22 @@ a{
 /**/
 .footer{
     margin: 0% 4%;
-    padding: 2% 12%; 
+    padding: 2% 12%;
     display: flex; 
     justify-content: center; 
     align-items: center;
     border-top: 3px solid black;
 }
 .footer_letter{
-    width: 50%;
-    font-size: 36px; 
+    width: 60%;
+    font-size: 36px;
     height: 320px;
 }
 #footer_company{
     font-family: 'Monoton', sans-serif;
 }
 #footer_title{
-    font-size: 30px;
+    font-size: 32px;
 }
 #footer_content{
     font-size: 16px;
@@ -719,7 +718,7 @@ a{
 }
 
 .footer_feedback{
-    width: 50%; 
+    width: 40%; 
     font-size: 16px;
     text-align: center;
     height: 320px;
@@ -733,7 +732,7 @@ a{
     font-weight: 200;
 }
 #footer_feedback_link{
-    display: none;
+    display: none; /**/
 }
 #footer_feedback_link_anchor{
     border: 1px solid orange;
@@ -809,7 +808,7 @@ a{
     height: 120px;
     animation: spin 2s linear infinite;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

@@ -4,16 +4,16 @@ html{
 body{
     margin: 0;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
+
 /* menu / navbar */
 .menu{
     display: flex;
     border-bottom: 3px solid black;
-    height: 100px;
+    height: 80px;
     justify-content: space-between;
     align-items: center;
     padding: 0% 4% 0% 4%;
@@ -23,20 +23,6 @@ a{
     font-size: 28px;
     font-family: 'Monoton', sans-serif;
     width: 170px;
-}
-.menu_content{
-    display: none;
-    margin-left: 10%;
-    font-size: 16px;
-}
-.menu_content_page{
-    font-family: 'Roboto', sans-serif;
-    margin: 0 10px;
-    width: 44px;
-}
-.menu_content_page a:hover{
-    color: orange;
-    cursor: pointer;
 }
 .menu_right{
     width: 70px;
@@ -53,9 +39,6 @@ a{
 .dropdown_left{
     margin-left: 40%;
 }
-.fa-folder-plus, .fa-user{
-    font-size: 20px;
-}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -63,30 +46,31 @@ a{
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 5px 12px;
+    padding: 2px 8px;
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     right: 16px;
 }
-
 .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 4px 8px;
+    padding: 2px 8px;
     border-radius: 10px;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 .dropdown:hover .dropbtn{
     color: orange;
 }
+
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
-    padding: 2% 4% 0% 4%;
+    padding: 0% 4% 0% 4%;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
@@ -104,11 +88,8 @@ a{
 .content_first_left_upper p:last-child{
     margin-top: -16px;
 }
-.content_first_left_lower{
-    /* border: 1px solid black; */
-}
 .content_first_left_lower_label{
-    font-size: 12px;
+    font-size: 14px;
 }
 .content_first_left_lower_option{
     margin-top: -10px;
@@ -133,7 +114,6 @@ a{
     cursor: pointer;
     color: orange;
     font-weight: bold;
-
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 12px;
@@ -141,9 +121,12 @@ a{
 .content_first_right{
     width: 10%;
 }
+
 /* 두번째 칸 - 인스트럭션 + 지원서 */
 .content_second{ 
-    padding: 4% 4% 2% 4%;
+    padding: 0% 4% 0% 4%;
+    padding-top: 8px;
+    padding-bottom: 8px;
     animation: goOpacityUp 2s ease-in-out;
     display: flex; 
 }
@@ -164,7 +147,7 @@ a{
 }
 .content_second_upper_right p{
     font-size: 16px;
-    margin-top: -16px;
+    margin-top: -24px;
 }
 .black_bg{
     display: none; 
@@ -172,8 +155,8 @@ a{
     content: ''; 
     width: 100%; 
     height: 100%; 
-    background-color:rgba(0, 0,0, 0.5); 
-    top:0; 
+    background-color: rgba(0, 0,0, 0.5); 
+    top: 0; 
     left: 0; 
     z-index: 1;
 }
@@ -200,13 +183,13 @@ a{
 }
 .modal_wrap{
     display: none; 
-    width: 500px; 
+    width: 280px; 
     height: 500px; 
     position: fixed; 
-    top:50%; 
+    top: 50%; 
     left: 50%; 
-    margin: -250px 0 0 -250px; 
-    background:#eee; 
+    margin: -250px 0 0 -150px; 
+    background: #eee; 
     z-index: 2;
 }
 .modal_close{
@@ -226,7 +209,7 @@ a{
     cursor: pointer;
 }
 .content_second_left_application{
-    padding: 0% 20%;
+    padding: 0% 8%; /**/
     height: 100%;
     background-color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
@@ -258,6 +241,7 @@ a{
     justify-content: center; 
     align-items: center;
     padding-left: 15px;
+    font-size: 12px;
 }
 .content_second_select_input_two{
     display: flex; 
@@ -265,6 +249,7 @@ a{
     align-items: center;
     margin-top: 4px; 
     padding-left: 30px;
+    font-size: 12px;
 }
 .content_second_select_input_three{
     display: flex; 
@@ -272,18 +257,20 @@ a{
     align-items: center;
     margin-top: 4px; 
     padding-left: 30px;
+    font-size: 12px;
 }
 .content_second_select_input_four{
     display: flex; 
     justify-content: center; 
     align-items: center;
     padding-left: 15px;
+    font-size: 12px;
 }
 .content_second_select_input_five{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    /* padding-left: 10px; */
+    font-size: 12px;
 }
 .underline{
     border-left-width: 0;
@@ -292,6 +279,7 @@ a{
 }
 .content_second_inputs{
     height: 30px;
+    width: 120px;
 }
 .content_second_submit{
     margin: 20px 0px 0px 0px;
@@ -315,22 +303,17 @@ a{
 #content_second_left_application_submit_signup{
     padding: 0px 10px;
 }
-.content_second_h2{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 2%;
-}
+
 /* 취업 정보 컨텐츠 */
 .content_popular{
     padding: 0% 4%;
-    /* background-color: rgba(130, 168, 212, 0.1); */
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 .content_popular_title{
     font-size: 22px;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
-    margin-top: 22px;
 }
 .content_popular_top{
     padding: 16px 0px 0px 0px;
@@ -347,7 +330,7 @@ a{
     height: 100px;
     padding: 0px 6px;
     border: 1px solid gray;
-    border-radius: 15px;
+    border-radius: 10px;
     vertical-align: middle;
     text-align: left;
     background-color: white;
@@ -361,12 +344,11 @@ a{
 #content_popular_top_contents_company{
     font-size: 14px;
     font-weight: 600;
-    margin: 4px 0px 4px 0px;
+    margin: 4px 0px 0px 0px;
 }
 #content_popular_top_contents_job{
     font-size: 12px;
     font-weight: 400;
-    margin: 4px 0px;
 }
 .content_popular_top_contents:hover{
     border: 3px solid orange;
@@ -376,6 +358,8 @@ a{
 /* 직무 / 자격증 */
 .content_issue{
     padding: 0% 4%;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background-color: rgba(155, 155, 155, 0.1);
 }
 #content_issue_first_title{
@@ -391,95 +375,9 @@ a{
 .content_issue_first{
     display: none;
 }
-#content_issue_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_video{
-    /* border: 1px solid black;
-    margin: 0px 4px;  */
-}
-#content_issue_video_iframe{
-    /* width: 24vw; 
-    height: 16vw;  */
-}
-#content_issue_video_title{
-    /* font-size: 10px; 
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_video_subtitle{
-    /* font-size: 6px; 
-    font-weight: 500;
-    text-align: center;
-    margin-top: -10px; */
-}
-.controls{
-    /* text-align: end; */
-}
-.controls span{
-    /* background-color: #333;
-    color: white;
-    border-radius: 10%; 
-	padding: 4px 12px; 
-	margin: 0px 3px; 
-    font-size: 8px; */
-}
-.controls span:hover{
-    /* cursor: pointer; */
-}
-.prev:hover{
-    /* background-color: orange; */
-}
-.next:hover{
-    /* background-color: orange; */
-}
 .content_issue_tablet{
     display: none;
 }
-#content_issue_tablet_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_tablet_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; */
-}
-#content_issue_tablet_video_iframe{
-    /* width: 36vw;
-    height: 24vw; */
-}
-#content_issue_tablet_video_title{
-    /* font-size: 14px;
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_tablet_video_subtitle{
-    /* font-size: 10px;
-    font-weight: 500;
-    text-align: center; */
-}
-#tablet_controls{
-    /* text-align: end; */
-}
-#tablet_controls span{
-    /* background-color: #333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10%;
-	padding: 6px 14px;
-	margin: 0 4px; */
-}
-#tablet_controls span:hover{
-    /* cursor: pointer; */
-}
-#tablet_prev:hover{
-    /* background-color: orange; */
-}
-#tablet_next:hover{
-    /* background-color: orange; */
-}
-
 #content_issue_mobile_first{
     display: flex;
     justify-content: center;
@@ -501,6 +399,7 @@ a{
     font-size: 12px;
     font-weight: 500;
     text-align: center;
+    margin-top: -8px;
 }
 #mobile_controls{
     text-align: end;
@@ -537,7 +436,7 @@ a{
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 8px;
+    font-size: 10px;
 }
 .content_issue_second_category_list h3{
     margin: 0px 20px;
@@ -584,6 +483,7 @@ a{
     opacity: 0.7;
     margin: -4px 0px 0px 10px;
 }
+
 /* 자소서 / 면접 */
 .content_ready{
     padding: 0% 4%;
@@ -715,10 +615,13 @@ a{
 .content_interview_content_contents:hover #content_interview_content_contents_name{
     visibility: hidden;
 }
-/**/
+
+/* footer */
 .footer{
     margin: 0% 4%;
-    padding: 2% 4%; 
+    padding: 0% 4%; 
+    padding-top: 8px;
+    padding-bottom: 8px;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
@@ -733,13 +636,10 @@ a{
     font-family: 'Monoton', sans-serif;
 }
 #footer_title{
-    font-size: 8px;
+    font-size: 16px;
 }
 #footer_content{
     display: none;
-    /* font-size: 12px;
-    border: 1px solid black;
-    margin-top: -8px; */
 }
 .footer_feedback{
     width: 50%; 
@@ -753,18 +653,15 @@ a{
 }
 #footer_feedback_caution{
     display: none;
-    /* font-size: 16px; */
     text-align: center;
     font-weight: 200;
 }
-#footer_feedback_link{
-    /* display: none; */
-}
 #footer_feedback_link_anchor{
-    border: 1px solid orange;
     padding: 2px 4px;
     font-size: 8px;
     border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
 }
 #footer_feedback_link_anchor:hover{
     background-color: orange;
@@ -790,6 +687,7 @@ a{
     padding: 4px 12px;
     display: none;
 }
+
 /*letter*/
 #letter{
     border: 1px solid black; 
@@ -805,6 +703,7 @@ a{
     display: flex;
     justify-content: center;
 }
+
 /*feedback*/
 #feedback{
     border: 1px solid black; 
@@ -832,7 +731,23 @@ a{
     text-align: center;
     padding: 30% 0%;
 }
+
 /*디테일 detail*/
+.loader{
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#detail_head{
+    height: 100vh;
+}
 #detail_tail{
     margin-top: 60px;
     text-align: center;
@@ -868,6 +783,7 @@ a{
     border-radius: 10px;
     font-weight: bold;
 }
+
 /*로그인*/
 .login{
     text-align: center;
@@ -914,6 +830,7 @@ a{
 .fa-google_icon_exp{
     margin-top: -7px;
 }
+
 /*로그아웃*/
 .logout{
     text-align: center;
@@ -937,6 +854,7 @@ a{
 .logout_button:hover{
     opacity: .5;
 }
+
 /* 회원가입 */
 .signup_onlygoogle{
     margin: 30px 0px;
@@ -944,6 +862,7 @@ a{
     animation: goOpacityUp 2s ease-in-out;
     font-size: 16px;
 }
+
 /*마이페이지*/
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
@@ -964,13 +883,10 @@ a{
 .mypage_first_head_th{
     border: 2px solid orange;
 }
-.mypage_first_body_td{
-    /* border-bottom: 2px solid orange; */
-}
 .mypage_email{
     display: none;
 }
-.mypage_job_type{
+.mypage_pubdate{
     display: none;
 }
 .mypage_school_number{
@@ -979,6 +895,7 @@ a{
 .mypage_name{
     display: none;
 }
+
 /* 직무 샘플 */
 #body_div{
     background-color: rgba(130, 168, 212, 0.1);
