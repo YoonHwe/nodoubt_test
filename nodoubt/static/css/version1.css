@@ -318,7 +318,7 @@ a{
     margin-top: 40px;
 }
 .content_popular_top{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
     margin: 0 auto;
 }
@@ -998,16 +998,6 @@ a{
 }
 #board_table_body_title a:hover{
     text-decoration: underline;
-}
-
-/* 게시판 detail */
-#board_detail{
-    padding: 4% 12% 2% 12%;
-    border: 3px solid gold;
-}
-#board_detail_title{
-    padding: 16px 4px;
-    border: 1px solid red;
 }
 
 /* 직무 샘플 */

@@ -4,7 +4,6 @@ html{
 body{
     margin: 0;
 }
-
 a{
     text-decoration: none;
     color: black;
@@ -17,11 +16,11 @@ a{
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 8%; /**/
+    padding: 0% 8%; 
     margin: 0% 4%;
 }
 .menu_company{
-    font-size: 32px; /**/
+    font-size: 32px; 
     font-family: 'Monoton', sans-serif;
     width: 170px;
 }
@@ -68,7 +67,7 @@ a{
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
-    padding: 4% 11% 2% 11%; /**/
+    padding: 4% 11% 2% 11%; 
     background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
@@ -77,24 +76,21 @@ a{
     background-repeat: no-repeat;
 }
 .content_first_left{
-    width: 60%; /**/
+    width: 60%; 
     padding-bottom: 40px;
 }
 .content_first_left_upper{
-    font-size: 30px; /**/
+    font-size: 30px; 
     font-weight: bold;
 }
 .content_first_left_upper p:last-child{
-    margin-top: -30px; /**/
-}
-.content_first_left_lower{
-    /* border: 1px solid black; */
+    margin-top: -30px; 
 }
 .content_first_left_lower_label{
-    font-size: 18px; /**/
+    font-size: 18px; 
 }
 .content_first_left_lower_option{
-    margin-top: -10px; /**/
+    margin-top: -10px; 
 }
 .content_first_left_lower_option li{
     opacity: .5;
@@ -269,7 +265,6 @@ a{
     display: flex; 
     justify-content: center; 
     align-items: center;
-    /* padding-left: 10px; */
 }
 .underline{
     border-left-width: 0;
@@ -307,10 +302,10 @@ a{
     font-weight: bold;
     margin-bottom: 2%;
 }
+
 /* 취업 정보 컨텐츠 */
 .content_popular{
     padding: 0% 11%;
-    /* background-color: rgba(130, 168, 212, 0.1); */
 }
 .content_popular_title{
     font-size: 30px;
@@ -319,7 +314,7 @@ a{
     margin-top: 40px;
 }
 .content_popular_top{
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
     margin: 0px auto;
 }
@@ -421,95 +416,8 @@ a{
 .content_issue_tablet{
     display: none;
 }
-#content_issue_tablet_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_tablet_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-}
-#content_issue_tablet_video_iframe{
-    /* width: 24vw;
-    height: 16vw; */
-}
-#content_issue_tablet_video_title{
-    /* font-size: 18px;
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_tablet_video_subtitle{
-    /* font-size: 14px;
-    font-weight: 500;
-    text-align: center; */
-}
-#tablet_controls{
-    /* text-align: end; */
-}
-#tablet_controls span{
-    /* background-color: #333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10%;
-	padding: 8px 16px;
-	margin: 0 4px; */
-}
-#tablet_controls span:hover{
-    /* cursor: pointer; */
-}
-#tablet_prev:hover{
-    /* background-color: orange; */
-}
-#tablet_next:hover{
-    /* background-color: orange; */
-}
-
 .content_issue_mobile{
     display: none;
-}
-#content_issue_mobile_first{
-    /* display: flex;
-    justify-content: center; */
-}
-#content_issue_mobile_video{
-    /* border: 1px solid black;
-    margin: 0px 10px; 
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-}
-#content_issue_mobile_video_iframe{
-    /* width: 24vw;
-    height: 16vw; */
-}
-#content_issue_mobile_video_title{
-    /* font-size: 18px;
-    font-weight: 700;
-    text-align: center; */
-}
-#content_issue_mobile_video_subtitle{
-    /* font-size: 14px;
-    font-weight: 500;
-    text-align: center; */
-}
-#mobile_controls{
-    /* text-align: end; */
-}
-#mobile_controls span{
-    /* background-color: #333;
-    color: white;
-    border: 1px solid black;
-    border-radius: 10%;
-	padding: 8px 16px;
-	margin: 0 4px; */
-}
-#mobile_controls span:hover{
-    /* cursor: pointer; */
-}
-#mobile_prev:hover{
-    /* background-color: orange; */
-}
-#mobile_next:hover{
-    /* background-color: orange; */
 }
 .content_issue_second_title{
     margin: 60px 0px 20px 0px; 
@@ -565,10 +473,11 @@ a{
     opacity: 0.7;
     margin: -10px 0px 0px 10px;
 }
+
 /* 자소서 / 면접 */
 .content_ready{
     padding: 0% 11%;
-    padding-top: 40px; 
+    padding-top: 30px; 
     background-color: rgba(130, 168, 212, 0.1);
 }
 .content_ready_title{
@@ -629,8 +538,8 @@ a{
 
 .content_interview{
     padding: 0% 11%;
-    padding-top: 40px; 
-    padding-bottom: 20px;
+    padding-top: 20px; 
+    padding-bottom: 30px;
     background-color: rgba(130, 168, 212, 0.1);
 }
 .content_interview_title{
@@ -692,7 +601,7 @@ a{
 .content_interview_content_contents:hover #content_interview_content_contents_name{
     visibility: hidden;
 }
-/**/
+
 .footer{
     margin: 0% 4%;
     padding: 2% 8%; 
