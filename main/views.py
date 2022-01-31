@@ -71,7 +71,7 @@ def letter(request):
     return render(request, 'main/letter.html')
 
 def board(request):
-    boards = Board.objects.all()
+    boards = Board.objects.all().order_by('-pub_date')
     return render(request, 'main/board.html', {'boards': boards})
 
 def board_new(request):

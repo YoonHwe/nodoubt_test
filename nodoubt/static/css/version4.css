@@ -847,9 +847,8 @@ a{
 /*마이페이지*/
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
-    padding: 20px;
+    padding: 40px 0px;
     width: 80vw;
-    height: 40vh;
     border-radius: 10px;
     margin: 40px auto;
     animation: goOpacityUp 2s ease-in-out;
@@ -860,16 +859,29 @@ a{
 .mypage_first{
     text-align: center;
     margin: auto;
+    border-collapse: collapse;
+    width: 90%;
 }
-.mypage_school_number{
+.mypage_first_head{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.mypage_name, .mypage_email{
     display: none;
 }
 .mypage_first_head_th{
-    border: 2px solid orange;
+    padding: 4px 20px;
 }
 .mypage_first_body_td{
-    /* border-bottom: 2px solid orange; */
+    padding: 8px 20px;
 }
+.mypage_first_body tr:hover{
+    background-color: orange;
+}
+.mypage_first_body_td a:hover{
+    text-decoration: underline;
+}
+
 /* 직무 샘플 */
 #body_div{
     background-color: rgba(130, 168, 212, 0.1);

@@ -5,6 +5,6 @@ from django.contrib.auth.models import User
 
 def mypage(request):
     user = request.user
-    boards = Board.objects.filter(writer=user)
+    boards = Board.objects.filter(writer=user).order_by('-pub_date')
     return render(request, 'users/mypage.html',{'boards':boards})
 

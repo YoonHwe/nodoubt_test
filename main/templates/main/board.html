@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content%}
-<div id="board" style="border: 5px solid gold;">
-    <h1 id="board_title">자유 게시판</h1>
+<div id="board">
+    <h1 id="board_title">자유게시판</h1>
     <h4 id="board_subtitle">자유게시판에서 질문과 답변을 통해 서로의 정보를 공유해 봅시다.</h4>
-
     <table id="board_table">
         <thead id="board_table_head">
             <tr>
@@ -22,7 +21,7 @@
                 <td id="board_table_body_title" class="board_table_bodies"><a href="{% url 'main:board_detail' board.id %}">{{board.title}}</a></td>
                 <td id="board_table_body_writer" class="board_table_bodies">{{board.writer}}</td>
                 <td id="board_table_body_pubdate" class="board_table_bodies">{{board.pub_date}}</td>   
-                <td id="board_table_body_like" class="board_table_bodies">{{forloop.revcounter}}</td>             
+                <td id="board_table_body_like" class="board_table_bodies">0</td>             
             </tr>
             {% endfor %}
         </tbody>

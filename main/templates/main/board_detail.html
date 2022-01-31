@@ -2,60 +2,63 @@
 {% load static %}
 {% block content %}
 
-<div id="board_detail" style="padding: 4% 12% 2% 12%;">
-	<h1 id="board_detail_title" style="border-bottom: 2px solid black;">{{board.title}}</h1>
-	<div style="display: flex; justify-content: space-between; margin-top: -22px;">
-		<p style="font-size: 16px; padding: 0px 16px; " id="board_detail_writer">{{board.writer}}</p>
-		<p style="font-size: 16px; padding: 0px 16px; " id="board_detail_pubdate">{{board.pub_date}}</p>
-	</div>
-	<div style="padding: 0px 24px; margin-top: 24px;">
-		<p id="board_detail_body" style="font-size: 22px;">{{board.body}}</p>
-		{% if board.image %}
-			<img id="board_detail_image" src="{{board.image.url}}" alt="사진" style="width: 100%;">
-		{% endif %}
-	</div>
-</div>
-
-<div style="padding: 0% 12%; text-align: end;">
-	{% if user == board.writer %}
-	<a href="{% url 'main:board_edit' board.id %}"><button>글 수정하기</button></a>
-	<a href="{% url 'main:board_delete' board.id %}"><button>글 삭제하기</button></a>
-	{% endif %}
-	<a href="{% url 'main:board' %}"><button>게시판으로 돌아가기</button></a>
-</div>
-
-
-<div id="board_detail_comment" style="padding: 0% 8%; margin: 0% 4%; border: 1px solid black;">
-	<h1>댓글목록</h1>
-
-	{% for comment in comments %}
-	<div style="border-bottom: 1px solid black; padding: 0px 12px;">
-		<div style="display: flex; justify-content: space-between; align-items: center;">
-			<p>{{comment.writer}}</p>
-			{% if user == comment.writer %}
-			<div>
-				<a href="{% url 'main:edit_board_comment' comment.id %}"><button>댓글 수정하기</button></a>
-				<a href="{% url 'main:delete_board_comment' comment.id %}"><button>댓글 삭제하기</button></a>
-			</div>
+<div id="board_detail" style="padding: 4% 12%;">
+	<div>
+		<h1 id="board_detail_title" style="border-bottom: 2px solid black;">{{board.title}}</h1>
+		<div style="display: flex; justify-content: space-between; margin-top: -22px;">
+			<p style="font-size: 16px; padding: 0px 16px; " id="board_detail_writer">{{board.writer}}</p>
+			<p style="font-size: 16px; padding: 0px 16px; " id="board_detail_pubdate">{{board.pub_date}}</p>
+		</div>
+		<div style="padding: 12px 24px; margin-top: 24px; background-color: white;">
+			<pre style="font-size: 22px;">{{board.body}}</pre>
+			{% if board.image %}
+				<img id="board_detail_image" src="{{board.image.url}}" alt="사진" style="width: 100%;">
 			{% endif %}
 		</div>
-		<p>{{comment.content}}</p>
 	</div>
-	{% endfor %}
-	{% if user.is_authenticated %}
-	<div id="board_detail_comment_create" style="border: 1px solid purple; margin-top: 20px; padding: 4px 16px;">
-		<h4>댓글 쓰기</h4>
-		<form action="{%url 'main:create_board_comment' board.id%}" method="POST" style="display: flex;">
-			{%csrf_token%}
-			<textarea cols="40" name="content" placeholder="댓글내용입력"></textarea>
-			<input type="submit" value="등록">
-		</form>
+	<div style="text-align: end; margin-top: 24px;">
+		{% if user == board.writer %}
+		<a href="{% url 'main:board_edit' board.id %}"><button>글 수정하기</button></a>
+		<a href="{% url 'main:board_delete' board.id %}"><button>글 삭제하기</button></a>
+		{% endif %}
+		<a href="{% url 'main:board' %}"><button>게시판으로 돌아가기</button></a>
 	</div>
-	{% else %}
-	<p>로그인 후 댓글 작성 가능</p>
-	{% endif %}
-
+	<div id="board_detail_comment" style="margin-top: 24px; padding: 6px 12px;">
+		<h1>댓글목록</h1>
+		{% for comment in comments %}
+		<div style="border-bottom: 1px solid black; padding: 0px 12px; background-color: white;">
+			<div style="display: flex; justify-content: space-between; align-items: center;">
+				<p>{{comment.writer}}</p>
+				{% if user == comment.writer %}
+				<div>
+					<a href="{% url 'main:edit_board_comment' comment.id %}"><button>댓글 수정하기</button></a>
+					<a href="{% url 'main:delete_board_comment' comment.id %}"><button>댓글 삭제하기</button></a>
+				</div>
+				{% endif %}
+			</div>
+			<p>{{comment.content}}</p>
+		</div>
+		{% endfor %}
+		
+		<div id="board_detail_comment_create" style="margin-top: 20px; padding: 4px 16px;">
+			{% if user.is_authenticated %}
+			<h4>댓글쓰기</h4>
+			<form action="{% url 'main:create_board_comment' board.id%}" method="POST">
+				{%csrf_token%}
+				<input type="text" name="content" placeholder="댓글내용입력" style="width: 50%;">
+				<input type="submit" value="등록">
+			</form>
+			{% else %}
+			<p>로그인 후 댓글 작성 가능</p>
+			{% endif %}
+		</div>
+	
+	</div>
+	
 </div>
+
+
+
 
 
 {% endblock %}

@@ -2,15 +2,17 @@
 {% load static %}
 
 {% block content %}
-<div>
+<div style="padding: 4% 12%;">
 	<h1>글 작성하기</h1>
 	<form action = "{% url 'main:board_create' %}" method = "post" enctype="multipart/form-data">
     	{% csrf_token %}
-    	<p>제목: <input type="text" name="title"></p>
+    	<p>제목<br><br><input type="text" name="title" style="width: 80%; height: 32px;"></p>
     	<!-- <p>작성자: <input type="text" name="writer"></p> -->
-    	<p>내용: <input type="text" name="body" id="" cols="30" rows="10"></p>
+		<p>내용<br><br><textarea name="body" style="width: 100%; height: 30vh;"></textarea></p>
         <p>사진: <input type="file" name="image"></p>
-    	<button type="submit">제출</button>
+		<div  style="display: flex; justify-content: end;">
+			<button type="submit">등록</button>
+		</div >
 	</form>
 </div>
 

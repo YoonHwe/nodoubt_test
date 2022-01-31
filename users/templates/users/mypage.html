@@ -6,21 +6,19 @@
     <table class="mypage_first">
         <thead class="mypage_first_head">
             <tr>
-                <th scope="col" id="board" class="mypage_first_head_th mypage_pubdate">작성일자</th>
-                <th scope="col" id="board" class="mypage_first_head_th mypage_job_type">제목</th>
-                <th scope="col" id="board" class="mypage_first_head_th mypage_name">작성자</th>
-                <th scope="col" id="board" class="mypage_first_head_th mypage_email">내용</th>
-                <th scope="col" id="board" class="mypage_first_head_th mypage_school_number">링크</th>
+                <th scope="col" class="mypage_first_head_th mypage_pubdate">작성일자</th>
+                <th scope="col" class="mypage_first_head_th mypage_job_type">제목</th>
+                <th scope="col" class="mypage_first_head_th mypage_name">작성자</th>
+                <th scope="col" class="mypage_first_head_th mypage_email">내용</th>
             </tr>
         </thead>
         <tbody class="mypage_first_body">
             {% for board in boards %}
             <tr>
                 <td class="mypage_first_body_td mypage_pubdate">{{board.pub_date}}</td>
-                <td class="mypage_first_body_td mypage_job_type">{{board.title}}</td>
+                <td class="mypage_first_body_td mypage_job_type"><a href="{% url 'main:board_detail' board.id %}" target="_blank">{{board.title}}</a></td>
                 <td class="mypage_first_body_td mypage_name">{{board.writer}}</td>
                 <td class="mypage_first_body_td mypage_email">{{board.summary}}</td>
-                <td class="mypage_first_body_td mypage_school_number"><a href="{% url 'main:board_detail' board.id %}">자세히...</a></td>
             </tr>
             {% endfor %}
         </tbody>
