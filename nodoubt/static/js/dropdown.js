@@ -1,3 +1,4 @@
+/* navbar.html */
 const dropdown = document.querySelector(".dropdown");
 const dropbtn = document.querySelector(".dropbtn");
 const dropdownContent = document.querySelector(".dropdown-content");

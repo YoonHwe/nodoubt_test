@@ -1,8 +1,10 @@
+/* index.html */
 function fnMove(seq){
     var offset = $(".content_" + seq).offset();
     $('html, body').animate({scrollTop : offset.top}, 400);
 }
 
+/* index.html */
 const category_first = document.querySelector(".category_list_first");
 const category_first_h3 = category_first.querySelector("h3");
 const category_second = document.querySelector(".category_list_second");
@@ -94,6 +96,7 @@ function paintList(event){
     }
 }
 
+/* index.html */
 window.onload = function() {
     function onClick() {
         document.querySelector('.modal_wrap').style.display ='block';

@@ -103,13 +103,14 @@ a{
     font-size: 18px;
     color: black;
     opacity: .5;
+    display: flex; 
+    align-items: center;
 }
 .content_first_left_lower_option a:hover{
     opacity: 1;
     cursor: pointer;
     color: orange;
     font-weight: bold;
-
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 18px;
@@ -193,10 +194,11 @@ a{
 }
 .modal_close{
     border: 1px solid black; 
-    margin-top: -36px; 
+    margin-top: -38px; 
     background-color: white; 
     height: 24px; 
     width: 20px; 
+    padding-top: 2px;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -311,7 +313,7 @@ a{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .content_popular_top{
     padding: 20px 0px 20px 0px;
@@ -602,72 +604,32 @@ a{
     visibility: hidden;
 }
 
+/**/
 .footer{
+    display: flex;
     margin: 0% 4%;
     padding: 2% 8%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
     border-top: 3px solid black;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .footer_letter{
-    width: 50%;
-    font-size: 32px; 
-    height: 320px;
+    width: 70%;
 }
 #footer_company{
     font-family: 'Monoton', sans-serif;
-}
-#footer_title{
-    font-size: 24px;
+    font-size: 38px;
 }
 #footer_content{
-    font-size: 12px;
-    margin-top: -8px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: -16px;
 }
-
-.footer_feedback{
-    width: 50%; 
-    font-size: 16px;
-    text-align: center;
-    height: 320px;
+#footer_content:first-child{
+    margin-top: 0px;
 }
-#footer_feedback_title{
-    font-size: 32px;
-    text-align: center;
-    font-weight: 400;
-}
-#footer_feedback_caution{
-    /* font-size: 16px; */
-    text-align: center;
-    font-weight: 200;
-}
-#footer_feedback_link{
-    display: none;
-}
-#footer_feedback_link_anchor{
-    border: 1px solid orange;
-    padding: 4px 8px;
-    border-radius: 10px;
-}
-#footer_feedback_link_anchor:hover{
-    background-color: orange;
-}
-#footer_feedback_content_title input{
-    width: 240px;
-}
-#footer_feedback_content_content textarea{
-    width: 240px;
-}
-#footer_feedback_content_email input{
-    width: 240px;
-}
-#feedback_submit{
-    margin-top: -20px;
-    margin-left: 50%;
-}
-#feedback_submit button{
-    padding: 4px 12px;
+#footer_link{
+    width: 30%;
+    padding-top: 18px;
 }
 /*디테일 detail*/
 .loader{
@@ -793,11 +755,10 @@ a{
 /*마이페이지*/
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
-    padding: 80px 0px;
-    width: 80vw;
-    border-radius: 10px;
-    margin: 50px auto;
+    padding: 130px 0px;
+    margin: 0px auto;
     animation: goOpacityUp 2s ease-in-out;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #mypage_first_title{
     text-align: center;

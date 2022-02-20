@@ -1,3 +1,5 @@
+/* detail.html */
+
 const head = document.querySelector("#detail_head");
 const body = document.querySelector("#detail_body");
 const tail = document.querySelector("#detail_tail");

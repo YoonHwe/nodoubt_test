@@ -16,11 +16,12 @@ a{
     height: 100px;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 12%; /**/
+    padding: 0% 12%;
     margin: 0% 4%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .menu_company{
-    font-size: 36px; /**/
+    font-size: 36px;
     font-family: 'Monoton', sans-serif;
     width: 170px;
 }
@@ -48,7 +49,6 @@ a{
     z-index: 1;
     padding: 5px 12px;
     border-radius: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 .dropdown-content a {
     color: black;
@@ -67,7 +67,7 @@ a{
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
-    padding: 4% 12% 2% 12%; /**/
+    padding: 4% 12% 2% 12%;
     background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
@@ -76,24 +76,21 @@ a{
     background-repeat: no-repeat;
 }
 .content_first_left{
-    width: 50%; /**/
+    width: 50%;
     padding-bottom: 40px;
 }
 .content_first_left_upper{
-    font-size: 32px; /**/
+    font-size: 32px;
     font-weight: bold;
 }
 .content_first_left_upper p:last-child{
-    margin-top: -32px; /**/
-}
-.content_first_left_lower{
-    /* border: 1px solid black; */
+    margin-top: -32px;
 }
 .content_first_left_lower_label{
-    font-size: 20px; /**/
+    font-size: 20px;
 }
 .content_first_left_lower_option{
-    margin-top: 10px; /**/
+    margin-top: 10px;
 }
 .content_first_left_lower_option li{
     opacity: .5;
@@ -112,7 +109,6 @@ a{
     cursor: pointer;
     color: orange;
     font-weight: bold;
-
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 20px;
@@ -196,10 +192,11 @@ a{
 }
 .modal_close{
     border: 1px solid black; 
-    margin-top: -36px; 
+    margin-top: -38px; 
     background-color: white; 
     height: 24px; 
     width: 20px; 
+    padding-top: 2px;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -315,7 +312,7 @@ a{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .content_popular_top{
     padding: 20px 0px 20px 0px;
@@ -323,7 +320,7 @@ a{
     margin: 0 auto;
 }
 .content_popular_top_box{	
-	margin: 0px 15px;
+    margin: 0px 15px;
 }
 .content_popular_top_contents{
     display: inline-block;
@@ -692,72 +689,35 @@ a{
 .content_interview_content_contents:hover #content_interview_content_contents_name{
     visibility: hidden;
 }
+
 /**/
 .footer{
+    display: flex;
     margin: 0% 4%;
     padding: 2% 12%;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
     border-top: 3px solid black;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .footer_letter{
-    width: 60%;
-    font-size: 36px;
-    height: 320px;
+    width: 70%;
 }
 #footer_company{
     font-family: 'Monoton', sans-serif;
-}
-#footer_title{
-    font-size: 32px;
+    font-size: 48px;
 }
 #footer_content{
-    font-size: 16px;
-    margin-top: -12px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -18px;
+}
+#footer_content:first-child{
+    margin-top: 0px;
+}
+#footer_link{
+    width: 30%;
+    padding-top: 20px;
 }
 
-.footer_feedback{
-    width: 40%; 
-    font-size: 16px;
-    text-align: center;
-    height: 320px;
-}
-#footer_feedback_title{
-    text-align: center;
-    font-weight: 400;
-}
-#footer_feedback_caution{
-    text-align: center;
-    font-weight: 200;
-}
-#footer_feedback_link{
-    display: none; /**/
-}
-#footer_feedback_link_anchor{
-    border: 1px solid orange;
-    padding: 4px 8px;
-    border-radius: 10px;
-}
-#footer_feedback_link_anchor:hover{
-    background-color: orange;
-}
-#footer_feedback_content_title input{
-    width: 280px;
-}
-#footer_feedback_content_content textarea{
-    width: 280px;
-}
-#footer_feedback_content_email input{
-    width: 280px;
-}
-#feedback_submit{
-    margin-top: -20px;
-    margin-left: 50%;
-}
-#feedback_submit button{
-    padding: 4px 12px;
-}
 /*letter*/
 #letter{
     border: 1px solid black; 
@@ -924,11 +884,10 @@ a{
 /*마이페이지*/
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
-    padding: 80px 0px;
-    width: 80vw;
-    border-radius: 10px;
-    margin: 50px auto;
+    padding: 130px 0px;
+    margin: 0px auto;
     animation: goOpacityUp 2s ease-in-out;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #mypage_first_title{
     text-align: center;

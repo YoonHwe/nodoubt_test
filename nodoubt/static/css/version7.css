@@ -46,7 +46,7 @@ a{
     min-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 2px 8px;
+    padding: 4px 12px;
     border-radius: 10px;
     font-family: 'Noto Sans KR', sans-serif;
     right: 16px;
@@ -75,7 +75,7 @@ a{
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
     background-image: url('/static/images/content_first_background.png');
-    background-size: 180%;
+    background-size: 140%;
     background-repeat: no-repeat;
 }
 .content_first_left{
@@ -84,6 +84,7 @@ a{
 .content_first_left_upper{
     font-size: 16px;
     font-weight: bold;
+    margin-left: 10px;
 }
 .content_first_left_upper p:last-child{
     margin-top: -16px;
@@ -100,7 +101,7 @@ a{
 .content_first_left_lower_option li{
     opacity: .5;
     list-style: none;
-    margin-top: -4px;
+    margin-top: -1px;
 }
 .content_first_left_lower_option li:hover{
     opacity: 1;
@@ -108,12 +109,17 @@ a{
 .content_first_left_lower_option a{
     font-size: 12px;
     opacity: .5;
+    display: flex; 
+    align-items: center;
 }
 .content_first_left_lower_option a:hover{
     opacity: 1;
     cursor: pointer;
     color: orange;
     font-weight: bold;
+}
+.content_first_left_lower_option .fa-circle{
+    font-size: 10px;
 }
 .content_first_left_lower_option a:hover i{
     margin-left: 12px;
@@ -194,10 +200,11 @@ a{
 }
 .modal_close{
     border: 1px solid black; 
-    margin-top: -36px; 
+    margin-top: -38px; 
     background-color: white; 
     height: 24px; 
     width: 20px; 
+    padding-top: 2px;
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -307,13 +314,13 @@ a{
 /* 취업 정보 컨텐츠 */
 .content_popular{
     padding: 0% 4%;
-    padding-top: 8px;
     padding-bottom: 8px;
 }
 .content_popular_title{
     font-size: 22px;
     font-weight: bold;
     font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 20px;
 }
 .content_popular_top{
     padding: 16px 0px 0px 0px;
@@ -622,70 +629,24 @@ a{
     padding: 0% 4%; 
     padding-top: 8px;
     padding-bottom: 8px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
     border-top: 3px solid black;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .footer_letter{
-    width: 50%;
-    font-size: 16px;
-    height: 80px;
+    display: none;
 }
 #footer_company{
     font-family: 'Monoton', sans-serif;
+    font-size: 32px;
 }
 #footer_title{
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 700;
 }
 #footer_content{
-    display: none;
-}
-.footer_feedback{
-    width: 50%; 
-    text-align: center;
-    height: 80px;
-}
-#footer_feedback_title{
-    font-size: 16px;
-    text-align: center;
-    font-weight: 400;
-}
-#footer_feedback_caution{
-    display: none;
-    text-align: center;
-    font-weight: 200;
-}
-#footer_feedback_link_anchor{
-    padding: 2px 4px;
-    font-size: 8px;
-    border-radius: 10px;
+    font-size: 6px;
     border: 1px solid black;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
-}
-#footer_feedback_link_anchor:hover{
-    background-color: orange;
-}
-#footer_feedback_content_title input{
-    width: 240px;
-    display: none;
-}
-#footer_feedback_content_content textarea{
-    width: 240px;
-    display: none;
-}
-#footer_feedback_content_email input{
-    width: 240px;
-    display: none;
-}
-#feedback_submit{
-    margin-top: -20px;
-    margin-left: 50%;
-    display: none;
-}
-#feedback_submit button{
-    padding: 4px 12px;
-    display: none;
+    margin-top: -6px;
 }
 
 /*letter*/
@@ -866,11 +827,10 @@ a{
 /*마이페이지*/
 .mypage{
     background-color: rgba(130, 168, 212, 0.1);
-    padding: 20px 0px;
-    width: 80vw;
-    border-radius: 10px;
-    margin: 20px auto;
+    padding: 40px 0px;
+    margin: 0px auto;
     animation: goOpacityUp 2s ease-in-out;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 #mypage_first_title{
     text-align: center;
