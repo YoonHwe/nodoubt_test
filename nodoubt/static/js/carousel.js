@@ -190,34 +190,52 @@ function checkPageTablet(){
 function checkPageMobile(){
     clearCheckPageMobile();
     clearMobileSrc();
-
+    let contentIframes = "";
     switch(currentPageMobile){
         case 1:
+            contentIframes = contentIssueFirstMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeOne;
             prevButtonMobile.style.visibility = "hidden";
             contentIssueFirstMobile.style.display = "flex";
             break;
         case 2:
+            contentIframes = contentIssueSecondMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeTwo;
             contentIssueSecondMobile.style.display = "flex";
             break;
         case 3:
+            contentIframes = contentIssueThirdMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeThree;
             contentIssueThirdMobile.style.display = "flex";
             break;
         case 4:
+            contentIframes = contentIssueFourthMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeFour;
             contentIssueFourthMobile.style.display = "flex";
             break;
         case 5:
+            contentIframes = contentIssueFifthMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeFive;
             contentIssueFifthMobile.style.display = "flex";
             break;
         case 6:
+            contentIframes = contentIssueSixthMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeSix;
             contentIssueSixthMobile.style.display = "flex";
             break;
         case 7:
+            contentIframes = contentIssueSeventhMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeSeven;
             contentIssueSeventhMobile.style.display = "flex";
             break;
         case 8:
+            contentIframes = contentIssueEighthMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeEight;
             contentIssueEighthMobile.style.display = "flex";
             break;
         case 9:
+            contentIframes = contentIssueNinthMobile.querySelector("#content_issue_mobile_video_iframe");
+            contentIframes.src = youtubeNine;
             nextButtonMobile.style.visibility = "hidden";
             contentIssueNinthMobile.style.display = "flex";
             break;

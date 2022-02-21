@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="board_detail">
+	<div>
+		<h1 id="board_detail_title">게시판 제목</h1>
+		<div id="board_detail_info">
+			<p id="board_detail_writer">게시판 작성자</p>
+			<p id="board_detail_pubdate">게시판 작성일자</p>
+		</div>
+		<div id="board_detail_content">
+			<textarea disabled>게시판 내용</textarea>
+		</div>
+	</div>
+	<div id="board_detail_function">
+		<a href="{% url 'main:board' %}"><button>게시판으로 돌아가기</button></a>
+	</div>	
+</div>
+{% endblock %}

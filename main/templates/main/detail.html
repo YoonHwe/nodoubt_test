@@ -30,18 +30,20 @@
             {% endif %}
         </h3>
     </span>
-    <a href="{% url 'main:showmain' %}"><button id="detail_tail_button">메인 화면으로 돌아가기</button></a>
+    <a href="{% url 'main:showmain' %}"><button id="detail_tail_button">홈으로 돌아가기</button></a>
 </div>
 <br><br><br><br>
 {% else %}
 <div id="detail_tail_login">
     <div>
-        <h2>로그인 후 이용 가능</h2>
+        <h4>로그인 후 이용 가능</h4>
         <a href="{% url 'account_login' %}"><button id="detail_tail_login_button">구글 로그인</button></a>
     </div>
 </div>
 {% endif %}
+{% if user.is_authenticated %}
 <script src="{% static 'js/detail.js' %}"></script>
+{% endif %}
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script>
     $(".like").click(function(){

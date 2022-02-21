@@ -1,7 +1,7 @@
 from csv import writer
 from xml.etree.ElementTree import Comment
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import Data, Request, Feedback, Like, Board, Comment_board
+from .models import Data, Request, Feedback, Like, Board, Comment_board, Board_Like
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
@@ -20,9 +20,6 @@ def detail(request, id):
     data = get_object_or_404(Data, pk = id)
     return render(request, 'main/detail.html', {'data': data})
 
-def new(request):
-    return render(request, 'main/new.html')
-
 def create(request):
     new_data = Data()
     new_data.company = request.POST['company']
@@ -33,11 +30,7 @@ def create(request):
     new_data.image = request.FILES.get('image')
     new_data.save()
     return redirect('main:detail', new_data.id)
-
-def edit(request, id):
-    edit_data = Data.objects.get(id = id)
-    return render(request, 'main/edit.html', {'data': edit_data})
-
+    
 def update(request, id):
     update_data = Data.objects.get(id = id)
     update_data.company = request.POST['company']
@@ -71,7 +64,7 @@ def letter(request):
     return render(request, 'main/letter.html')
 
 def board(request):
-    boards = Board.objects.all().order_by('-pub_date')
+    boards = Board.objects.all().order_by('-created_at')
     return render(request, 'main/board.html', {'boards': boards})
 
 def board_new(request):
@@ -154,6 +147,9 @@ def career(request):
 def sample(request):
     return render(request, 'sample/sample.html')
 
+def board_notice(request):
+    return render(request, 'main/board_notice.html')
+
 @login_required
 @require_POST
 
@@ -170,6 +166,24 @@ def like_toggle(request, post_id):
     context = {
         "like_count":post.like_count,
         "result":result
+    }
+
+    return HttpResponse(json.dumps(context), content_type="application/json")
+
+
+def board_like_toggle(request, post_id):
+    post = get_object_or_404(Board, pk=post_id)
+    post_like, post_like_created = Board_Like.objects.get_or_create(user=request.user, post=post)
+
+    if not post_like_created:
+        post_like.delete()
+        result = "like_cancel"
+    else:
+        result = "like"
+    
+    context = {
+        "like_count": post.board_like_count,
+        "result": result
     }
 
     return HttpResponse(json.dumps(context), content_type="application/json")

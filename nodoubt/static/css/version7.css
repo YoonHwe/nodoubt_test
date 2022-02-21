@@ -18,6 +18,7 @@ a{
     align-items: center;
     padding: 0% 4% 0% 4%;
     margin: 0% 4%;
+    animation: goOpacityUp 2s ease-in-out;
 }
 .menu_company{
     font-size: 28px;
@@ -369,6 +370,10 @@ a{
     padding-bottom: 8px;
     background-color: rgba(155, 155, 155, 0.1);
 }
+#content_issue_second, #content_issue_third, #content_issue_tablet_second, #content_issue_tablet_third,#content_issue_tablet_fourth, #content_issue_tablet_fifth, #content_issue_mobile_second, #content_issue_mobile_third, #content_issue_mobile_fourth,#content_issue_mobile_fifth, #content_issue_mobile_sixth, #content_issue_mobile_seventh, #content_issue_mobile_eighth, #content_issue_mobile_ninth{
+    display: none;
+    justify-content: center;
+} 
 #content_issue_first_title{
     font-size: 20px; 
     margin-bottom: 12px; 
@@ -743,6 +748,7 @@ a{
     background-color: orange; 
     border-radius: 10px;
     font-weight: bold;
+    font-size: 10px;
 }
 
 /*로그인*/
@@ -862,6 +868,183 @@ a{
 }
 .mypage_first_body_td a:hover{
     text-decoration: underline;
+}
+
+/* 게시판 */
+#board{
+    padding: 4% 4%;
+    background-color: rgba(155, 155, 155, 0.1);
+}
+#board_title{
+    font-size: 22px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#board_subtitle{
+    font-size: 10px;
+    margin-top: -16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+}
+#board_table{
+    /* margin: 0 auto; */
+    width: 100%;
+    border-collapse: collapse;
+}
+.board_table_heads{
+    padding: 12px 2px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 8px;
+}
+#board_table_head_pubdate{
+    display: none;
+}
+#board_table_body_content{
+    border-bottom: 1px solid gray;
+    padding: 10px 5px;
+}
+.board_table_bodies{
+    padding: 8px 2px;
+    font-size: 6px;
+}
+#board_table_body_number{
+    width: 30px;
+    text-align: center;
+}
+#board_table_body_title{
+    /* width: 200px; */
+}
+#board_table_body_writer{
+    /* width: 80px; */
+    text-align: center;
+}
+#board_table_body_pubdate{
+    display: none;
+    /* width: 200px; */
+    text-align: center;
+}
+#board_table_body_like{
+    width: 60px;
+    text-align: center;
+}
+#board_table_body_content:hover{
+    background-color: orange;
+}
+#board_table_body_title a:hover{
+    text-decoration: underline;
+}
+#board_create_button{
+    padding: 2px 4px; 
+    display: flex; 
+    margin-left: auto;
+    font-size: 10px;
+}
+
+/* 게시판 작성하기 */
+#board_new{
+    padding: 4% 4%;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#board_new_input_title{
+    width: 80%;
+    height: 32px;
+}
+#board_new_input_content{
+    width: 100%;
+    height: 30vh;
+}
+#board_new_button_submit{
+    display: flex;
+    justify-content: end;
+}
+
+/* 게시판 상세 */
+#board_detail{
+    padding: 4% 6%;
+}
+#board_detail_title{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+#board_detail_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+#board_detail_writer{
+    font-size: 10px;
+    padding: 0px 10px;
+}
+#board_detail_pubdate{
+    font-size: 10px;
+    padding: 0px 10px;
+}
+#board_detail_content{
+    padding: 6px 16px;
+    margin-top: 20px;
+    background-color: white;
+}
+#board_detail_content textarea{
+    font-size: 16px;
+    padding: 16px 0px;
+    width: 100%;
+    height: 30vh;
+    border: 0px solid white;
+    background-color: white;
+}
+#board_detail_image{
+    width: 100%;
+}
+#board_detail_function{
+    text-align: end;
+    margin-top: 20px;
+}
+#board_detail_function_like{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#board_detail_function_like_button{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+#board_detail_comment{
+    margin-top: 20px;
+    padding: 4px 8px;
+}
+#board_detail_comment_title{
+    font-size: 16px;
+}
+#board_detail_comment_content{
+    border-bottom: 1px solid black;
+    padding: 0px 10px;
+    background-color: white;
+    font-size: 10px;
+}
+#board_detail_comment_content_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#board_detail_comment_create{
+    margin-top: 16px;
+    padding: 4px 12px;
+}
+#board_detail_comment_create{
+    font-size: 12px;
+}
+#comment_create_input{
+    width: 70%;
+}
+
+/* 댓글 수정하기 */
+#board_comment_edit{
+    padding: 4% 6%;
+    height: 50vh;
+}
+#board_comment_edit h1{
+    font-size: 28px;
 }
 
 /* 직무 샘플 */

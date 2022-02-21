@@ -61,19 +61,37 @@ class Board(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
     writer = models.ForeignKey(User, on_delete=models.CASCADE)
-    pub_date = models.DateTimeField()
+    # pub_date = models.DateTimeField()
     body = models.TextField()
     image = models.ImageField(upload_to = "board/", blank=True, null=True)
+    board_like_user_set = models.ManyToManyField(User, blank=True, related_name='board_likes_user_set', through='Board_Like')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     @property
-    # def like_count(self):
-    #     return self.like_user_set_board.count()
+    def board_like_count(self):
+        return self.board_like_user_set.count()
 
     def __str__(self):
         return self.title
 
+    def title_summary(self):
+        if(len(self.title) > 20):
+            return self.title[:20] + "..."
+        else:
+            return self.title
+
     def summary(self):
         return self.body[:10]
+
+class Board_Like(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Board, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together =(('user', 'post'))
 
 class Comment_board(models.Model):
     content = models.TextField()
