@@ -69,9 +69,9 @@ a{
 /* 첫번째 칸 - 기업 소개 */
 .content_first{
     display: flex;
-    padding: 0% 4% 0% 4%;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 0% 4%;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: rgba(130, 168, 212, 0.1);
     animation: goOpacityUp 2s ease-in-out;
     font-family: 'Noto Sans KR', sans-serif;
@@ -95,9 +95,6 @@ a{
 }
 .content_first_left_lower_option{
     margin-top: -10px;
-}
-.content_first_left_lower_option li:first-child{
-    margin-top: 0px;
 }
 .content_first_left_lower_option li{
     opacity: .5;

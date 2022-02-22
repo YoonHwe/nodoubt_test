@@ -104,6 +104,8 @@ a{
     font-size: 20px;
     color: black;
     opacity: .5;
+    display: flex; 
+    align-items: center;
 }
 .content_first_left_lower_option a:hover{
     opacity: 1;
