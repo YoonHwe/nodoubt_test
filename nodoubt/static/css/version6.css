@@ -16,8 +16,9 @@ a{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 4% 0% 4%;
+    padding: 0% 4%;
     margin: 0% 4%;
+    font-family: 'Noto Sans KR', sans-serif;
     animation: goOpacityUp 2s ease-in-out;
 }
 .menu_company{
@@ -49,7 +50,6 @@ a{
     z-index: 1;
     padding: 5px 12px;
     border-radius: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
     right: 16px;
 }
 .dropdown-content a {

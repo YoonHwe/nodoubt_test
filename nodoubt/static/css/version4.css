@@ -49,7 +49,6 @@ a{
     z-index: 1;
     padding: 5px 12px;
     border-radius: 10px;
-    font-family: 'Noto Sans KR', sans-serif;
 }
 .dropdown-content a {
     color: black;
